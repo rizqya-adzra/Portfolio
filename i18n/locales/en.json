@@ -1,0 +1,24 @@
+{
+    "about_me": "ABOUT ME",
+    "certificate": "CERTIFICATE",
+    "experience": "EXPERIENCE",
+    "blog": "BLOG",
+
+    "welcome": "PORTFOLIO.",
+    "introduction": "NAME'S RIZQYA (JUST CALL ME KIYAA)",
+
+    "header_1": "ABOUT ME",
+    "subheader_1": "HIGH SCHOOL FRESH GRADUATE",
+    "description_1": "I am a student who focuses on website development. I am committed to always maintaining high-quality standards in every work and contribution I produce. I have an interest in pursuing a career as a Front-End Web Developer. I am also interested in digital illustration and 3D, which I integrate with programming to create engaging visual experiences in websites and interactive applications.",
+    
+    "header_2": "ABILITIES",
+    "subheader_2": "FRAMEWORKS & LIBRARIES",
+    "subheader_2.1": "OTHERS",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+
+    "header_3": "PROJECTS",
+    "subheader_3": "SCHOOL, INTERNSHIP, AND PERSONAL PROJECTS",
+
+    "footer_1": "© 2025 All rights reserved. Made with love featuring NuxtJs",
+    "footer_2": "For inquiries, collaboration, and job offers please contact me through e-mail:"
+}

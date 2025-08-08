@@ -1,0 +1,25 @@
+{
+    "about_me": "ÜBER MICH",
+    "certificate": "ZERTIFIKAT",
+    "experience": "ERFAHRUNG",
+    "blog": "BLOG",
+
+    "welcome": "PORTFOLIO.",
+    "introduction": "ICH HEIßE RIZQYA (NENNEN SIE MICH EINFACH KIYAA)",
+
+    "header_1": "ÜBER MICH",
+    "subheader_1": "FRISCHER ABSOLVENT DER OBERSTUFE",
+    "description_1": "Ich bin eine Schülerin, die sich auf Webentwicklung konzentriert. Ich bin bestrebt, in jeder Arbeit und jedem Beitrag, den ich leiste, stets hohe Qualitätsstandards einzuhalten. Ich habe Interesse daran, eine Karriere als Front-End-Webentwicklerin zu verfolgen. Außerdem interessiere ich mich für digitale Illustration und 3D, die ich mit Programmierung kombiniere, um ansprechende visuelle Erlebnisse auf Websites und in interaktiven Anwendungen zu schaffen.",
+
+    "header_2": "FÄHIGKEITEN",
+    "subheader_2": "FRAMEWORKS & BIBLIOTHEKEN",
+    "subheader_2.1": "SONSTIGES",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "header_3": "PROJEKTE",
+    "subheader_3": "SCHUL-, PRAKTIKUMS- UND PERSÖNLICHE PROJEKTE",
+
+    "footer_1": "© 2025 Alle Rechte vorbehalten. Mit Liebe erstellt mit NuxtJs",
+    "footer_2": "Für Anfragen, Zusammenarbeit und Jobangebote kontaktieren Sie mich bitte per E-Mail:"
+
+}

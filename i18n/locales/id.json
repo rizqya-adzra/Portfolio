@@ -1,0 +1,25 @@
+{
+    "about_me": "TENTANG SAYA",
+    "certificate": "SERTIFIKASI",
+    "experience": "PENGALAMAN",
+    "blog": "BLOG",
+
+    "welcome": "PORTOFOLIO.",
+    "introduction": "SAYA RIZQYA (BOLEH DIPANGGIL KIYAA AJA)",
+
+    "header_1": "TENTANG SAYA",
+    "subheader_1": "SEKOLAH MENENGAH KEJURUAN FRESH GRADUATE",
+    "description_1": "Saya merupakan siswi yang fokus terhadap pengembangan website. Saya berkomitmen untuk selalu menjaga standar kualitas tinggi dalam setiap karya dan kontribusi yang saya hasilkan. Saya memiliki minat untuk berkarier sebagai seorang Front-End Web Developer. Saya juga memiliki minat pada ilustrasi digital dan 3D, yang saya integrasikan dengan pemrograman untuk menciptakan pengalaman visual yang menarik dalam website dan aplikasi interaktif.",
+    
+    "header_2": "KEMAMPUAN",
+    "subheader_2": "FRAMEWORKS & LIBRARIES",
+    "subheader_2.1": "LAINNYA",
+    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+
+    "header_3": "PROJEK",
+    "subheader_3": "BERISI PROJEK SEKOLAH, PROJEK MAGANG, DAN PROJEK PRIBADI",
+
+    "footer_1": "© 2025 Semua hak dilindungi. Dibuat dengan cinta menggunakan NuxtJs",
+    "footer_2": "Untuk pertanyaan, kerja sama, dan tawaran pekerjaan, silakan hubungi saya melalui email:"
+
+}

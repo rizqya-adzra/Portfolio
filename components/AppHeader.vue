@@ -1,5 +1,5 @@
 <template>
-  <div class="font-inter flex items-center py-5 justify-around bg-[#101113] text-white">
+  <div class="font-inter flex items-center py-5 justify-around border-b-[1px] border-[#714AFF] bg-[#101113] text-white">
     <div>
       <h1 class="text-2xl font-bold">LOGO.</h1>
     </div>
@@ -9,19 +9,19 @@
         'text-white border-b-[6px] p-2 transition-all',
         route.path === '/' ? 'border-[#714AFF]' : 'border-transparent hover:border-[#714AFF]'
       ]">
-        ABOUT ME
+        {{ $t('about_me') }}
       </button>
       <button @click="navigateTo('/certificate')" :class="[
         'text-white border-b-[6px] p-2 transition-all',
         route.path === '/certificate' ? 'border-[#714AFF]' : 'border-transparent hover:border-[#714AFF]'
       ]">
-        CERTIFICATE
+        {{ $t('certificate') }}
       </button>
       <button class="text-white border-b-4 p-2 border-transparent hover:border-[#714AFF] transition-all">
-        EXPERIENCE
+        {{ $t('experience') }}
       </button>
       <button class="text-white border-b-4 p-2 border-transparent hover:border-[#714AFF] transition-all">
-        BLOG
+        {{ $t('blog') }}
       </button>
     </div>
 
@@ -42,27 +42,9 @@
           </div>
         </div>
       </div>
-        <div class="relative inline-block text-left">
-    <button
-      @click="isOpen = !isOpen"
-      class="flex items-center gap-2 px-3 py-2 bg-[#2b2b2b] text-[#f5f0e6] rounded-full hover:opacity-90 focus:outline-none transition"
-    >
-      <Icon name="ph:globe-bold" class="text-3xl" />
-
-      <Icon name="ph:caret-down-bold" class="text-xs" />
-    </button>
-
-    <div
-      v-if="isOpen"
-      class="absolute right-0 mt-2 w-32 bg-[#2b2b2b] text-white rounded-md shadow-lg z-50"
-    >
-      <ul class="py-1 text-sm">
-        <li class="px-2 py-2 mx-3 my-1 rounded hover:bg-[#444] cursor-pointer font-bold">Indonesia</li>
-        <li class="px-2 py-2 mx-3 my-1 rounded hover:bg-[#444] cursor-pointer font-bold">English</li>
-        <li class="px-2 py-2 mx-3 my-1 rounded hover:bg-[#444] cursor-pointer font-bold">Deutsch</li>
-      </ul>
-    </div>
-  </div>
+      <div>
+        <LanguageSwitcher />
+      </div>
     </div>
   </div>
 </template>

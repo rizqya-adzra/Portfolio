@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    classSuffix: '', // hasilnya: class="dark" atau class="light"
+    classSuffix: '', 
   },
   i18n: {
     locales: [
