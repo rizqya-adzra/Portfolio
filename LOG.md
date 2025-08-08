@@ -6,3 +6,9 @@
 - Menambahkan component AppHeader dan AppFooter 
 - Menambahkan component base yang berisi PrimaryButton, SecondaryButton, TertiaryButton, NavigationButton
 - Menambahkan page index dan certificate
+
+[RA] Update 2025-08-08 v1.0.2
+- Memperbaiki tampilan component TertiaryButton agar bisa memakai icon
+- Menginstall google-fonts dan menambahkan font Inter, Jaro, dan Bebas Neue lihat di tailwind.config.js dan nuxt.config.js
+- Menambahkan component video infinite untuk index.vue
+- Memperbaiki typo Deustch menjadi Deutsch di nuxt.config.js

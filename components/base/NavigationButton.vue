@@ -1,6 +1,6 @@
 <template>
   <button 
-    class="text-white border-b-[6px] p-2 transition-all border-transparent"
+    class="font-inter text-white border-b-[6px] p-2 transition-all border-transparent"
     :class="[
       'hover:border-[#714AFF]', 
       { 

@@ -1,14 +1,30 @@
 // nuxt.config.ts
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n', '@nuxt/icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
+    '@nuxt/icon',
+    '@nuxtjs/google-fonts',
+  ],
+
+  googleFonts: {
+    families: {
+      Inter: [200, 300, 400, 500, 600, 700],
+      Jaro: [200, 300, 400, 500, 600, 700],
+      'Bebas Neue': [200, 300, 400, 500, 600, 700]
+    },
+    display: 'swap',
+    preload: true
+  },
 
   colorMode: {
     classSuffix: '', // hasilnya: class="dark" atau class="light"
   },
   i18n: {
     locales: [
-      { code: 'de', iso: 'de-DE', file: 'de.json', name: 'Deustch' },
+      { code: 'de', iso: 'de-DE', file: 'de.json', name: 'Deutsch' },
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'id', iso: 'id-ID', file: 'id.json', name: 'Bahasa Indonesia' },
     ],

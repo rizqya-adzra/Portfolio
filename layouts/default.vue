@@ -3,7 +3,7 @@
 
     <AppHeader />
 
-    <main class="flex-1 w-[1430px] px-3 mx-auto">
+    <main class="overflow-hidden">
       <slot />
     </main>
     

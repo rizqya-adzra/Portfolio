@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center py-5 justify-around bg-[#101113] text-white">
+  <div class="font-inter flex items-center py-5 justify-around bg-[#101113] text-white">
     <div>
       <h1 class="text-2xl font-bold">LOGO.</h1>
     </div>
