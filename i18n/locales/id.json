@@ -10,16 +10,20 @@
     "header_1": "TENTANG SAYA",
     "subheader_1": "SEKOLAH MENENGAH KEJURUAN FRESH GRADUATE",
     "description_1": "Saya merupakan siswi yang fokus terhadap pengembangan website. Saya berkomitmen untuk selalu menjaga standar kualitas tinggi dalam setiap karya dan kontribusi yang saya hasilkan. Saya memiliki minat untuk berkarier sebagai seorang Front-End Web Developer. Saya juga memiliki minat pada ilustrasi digital dan 3D, yang saya integrasikan dengan pemrograman untuk menciptakan pengalaman visual yang menarik dalam website dan aplikasi interaktif.",
+    "backend_description": "Backend developer bekerja di “dapur” dan “gudang” aplikasi — bagian yang tidak terlihat pengguna tetapi membuat semuanya berjalan. Mereka mengatur penyimpanan data, memproses pesanan, menghubungkan aplikasi dengan database, dan memastikan permintaan pengguna diproses dengan aman dan cepat. Ibarat koki dan manajer gudang, backend developer memastikan resep disiapkan dengan benar, stok tercatat, dan pesanan yang masuk diproses sampai siap dikirimkan ke pelanggan.",
+    "fullstack_description": "Full stack developer adalah seorang pengembang yang menguasai pembuatan aplikasi atau website dari sisi depan (front-end) hingga sisi belakang (back-end). Sederhananya, ia mampu membuat tampilan yang dilihat dan digunakan pengguna sekaligus mengatur sistem di balik layar yang mengolah data dan menjalankan fungsi aplikasi. Ibarat membangun sebuah toko, full stack developer bisa mendesain etalase yang menarik untuk pengunjung sekaligus mengatur dapur dan gudang agar semua pesanan dapat diproses dengan lancar.",
+    "frontend_description": "Frontend developer adalah orang yang membuat tampilan dan pengalaman yang dilihat langsung oleh pengguna di sebuah aplikasi atau website. Mereka merancang tata letak, warna, tombol, dan interaksi supaya pengguna mudah menggunakannya — ibarat dekorator dan kasir toko yang menata etalase, membuat label harga, dan memastikan pelanggan bisa melihat dan membeli barang dengan nyaman. Jika ada tombol atau form, frontend developer yang memastikan semuanya terlihat rapi dan bereaksi dengan benar ketika diklik.",
     
     "header_2": "KEMAMPUAN",
     "subheader_2": "FRAMEWORKS & LIBRARIES",
     "subheader_2.1": "LAINNYA",
-    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "description_2": "Kemampuan lainnya termasuk dengan kerja sama tim, manajemen projek, review code, diskusi, membuat dokumentasi aplikasi atau projek, dan pembuatan mock-up atau desain yang modern dan kompatibel menggunakan Figma.",
 
     "header_3": "PROJEK",
     "subheader_3": "BERISI PROJEK SEKOLAH, PROJEK MAGANG, DAN PROJEK PRIBADI",
 
     "footer_1": "© 2025 Semua hak dilindungi. Dibuat dengan cinta menggunakan NuxtJs",
-    "footer_2": "Untuk pertanyaan, kerja sama, dan tawaran pekerjaan, silakan hubungi saya melalui email:"
+    "footer_2": "Untuk pertanyaan, kerja sama, dan tawaran pekerjaan, silakan hubungi saya melalui email:",
 
+    "default_description": "Tidak ada deskripsi"
 }

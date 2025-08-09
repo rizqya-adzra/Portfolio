@@ -10,16 +10,21 @@
     "header_1": "ÜBER MICH",
     "subheader_1": "FRISCHER ABSOLVENT DER OBERSTUFE",
     "description_1": "Ich bin eine Schülerin, die sich auf Webentwicklung konzentriert. Ich bin bestrebt, in jeder Arbeit und jedem Beitrag, den ich leiste, stets hohe Qualitätsstandards einzuhalten. Ich habe Interesse daran, eine Karriere als Front-End-Webentwicklerin zu verfolgen. Außerdem interessiere ich mich für digitale Illustration und 3D, die ich mit Programmierung kombiniere, um ansprechende visuelle Erlebnisse auf Websites und in interaktiven Anwendungen zu schaffen.",
+    "backend_description": "Ein Backend-Entwickler arbeitet in der „Küche“ und im „Lager“ einer Anwendung – also in dem Bereich, den die Nutzer nicht sehen, der aber dafür sorgt, dass alles reibungslos läuft. Er verwaltet die Datenspeicherung, bearbeitet Anfragen, verbindet die Anwendung mit Datenbanken und stellt sicher, dass alles sicher und effizient verarbeitet wird. Wie ein Koch und Lagerverwalter sorgt ein Backend-Entwickler dafür, dass das Rezept richtig zubereitet wird, der Bestand erfasst ist und eingehende Bestellungen bis zur Auslieferung bearbeitet werden.",
+    "fullstack_description": "Ein Full-Stack-Entwickler ist jemand, der sowohl das Frontend (den sichtbaren Teil für die Nutzer) als auch das Backend (die Systeme im Hintergrund) einer Anwendung oder Website beherrscht. Einfach gesagt, er kann die Benutzeroberfläche erstellen, mit der die Nutzer interagieren, und gleichzeitig die Systeme verwalten, die Daten verarbeiten und Funktionen ausführen. Es ist wie beim Bau eines Ladens, bei dem der Full-Stack-Entwickler die Schaufensterfront für die Kunden gestaltet und gleichzeitig Küche und Lager organisiert, damit jede Bestellung reibungslos abgewickelt wird.",
+    "frontend_description": "Ein Frontend-Entwickler erstellt das Aussehen und die Benutzererfahrung einer Anwendung oder Website – den Teil, den die Nutzer direkt sehen und mit dem sie interagieren. Er entwirft Layouts, Farben, Schaltflächen und Interaktionen, damit die Bedienung einfach und angenehm ist. Wie ein Dekorateur und Kassierer, der das Schaufenster eines Ladens gestaltet, sorgt er dafür, dass alles ansprechend aussieht und korrekt auf Klicks oder Berührungen reagiert.",
+
 
     "header_2": "FÄHIGKEITEN",
-    "subheader_2": "FRAMEWORKS & BIBLIOTHEKEN",
+    "subheader_2": "FRAMEWORKS & LIBRARIES",
     "subheader_2.1": "SONSTIGES",
-    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description_2": "Weitere Fähigkeiten umfassen Teamarbeit, Projektmanagement, Code-Review, Diskussionen, das Erstellen von Anwendungs- oder Projektdokumentationen sowie die Erstellung moderner und kompatibler Mock-ups oder Designs mit Figma.",
 
     "header_3": "PROJEKTE",
     "subheader_3": "SCHUL-, PRAKTIKUMS- UND PERSÖNLICHE PROJEKTE",
 
     "footer_1": "© 2025 Alle Rechte vorbehalten. Mit Liebe erstellt mit NuxtJs",
-    "footer_2": "Für Anfragen, Zusammenarbeit und Jobangebote kontaktieren Sie mich bitte per E-Mail:"
+    "footer_2": "Für Anfragen, Zusammenarbeit und Jobangebote kontaktieren Sie mich bitte per E-Mail:",
 
+    "default_description": "Keine Beschreibung"
 }

@@ -15,5 +15,10 @@
 - Added Abilities Subpage
 - Added Tooltip Component
 
+### Feat V1.0.4
+- Changed AppHeader to be white or black depending on the chosen color mode
+- Added PopUpCard for About Me Subpage
+- Added paragraphs to be translated in de.json, en.json, dan id.json 
+
 
 

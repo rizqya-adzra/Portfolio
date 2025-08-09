@@ -10,15 +10,21 @@
     "header_1": "ABOUT ME",
     "subheader_1": "HIGH SCHOOL FRESH GRADUATE",
     "description_1": "I am a student who focuses on website development. I am committed to always maintaining high-quality standards in every work and contribution I produce. I have an interest in pursuing a career as a Front-End Web Developer. I am also interested in digital illustration and 3D, which I integrate with programming to create engaging visual experiences in websites and interactive applications.",
+    "backend_description": "A backend developer works in the 'kitchen' and 'storage' of an application — the part users never see but that keeps everything running. They manage data storage, process requests, connect the app to databases, and make sure everything is handled securely and efficiently. Like a chef and warehouse manager, a backend developer ensures the recipe is prepared correctly, stock is recorded, and incoming orders are processed until they’re ready to be delivered.",
+    "fullstack_description": "A full stack developer is someone skilled in building both the front-end (the part users see) and the back-end (the behind-the-scenes systems) of an application or website. Simply put, they can create the interface that users interact with and also manage the systems that process data and run the app’s functions. It’s like building a store where the full stack developer designs the storefront for customers while also organizing the kitchen and storage to make sure every order is handled smoothly.",
+    "frontend_description": "A frontend developer creates the look and feel of an application or website — the part users directly see and interact with. They design layouts, colors, buttons, and interactions so the experience is smooth and intuitive. Like a decorator and cashier arranging a store’s display, they make sure everything looks appealing and reacts properly when clicked or touched.",
+
     
     "header_2": "ABILITIES",
     "subheader_2": "FRAMEWORKS & LIBRARIES",
     "subheader_2.1": "OTHERS",
-    "description_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "description_2": "Other skills include teamwork, project management, code review, discussions, creating application or project documentation, and making modern and compatible mock-ups or designs using Figma.",
 
     "header_3": "PROJECTS",
     "subheader_3": "SCHOOL, INTERNSHIP, AND PERSONAL PROJECTS",
 
     "footer_1": "© 2025 All rights reserved. Made with love featuring NuxtJs",
-    "footer_2": "For inquiries, collaboration, and job offers please contact me through e-mail:"
+    "footer_2": "For inquiries, collaboration, and job offers please contact me through e-mail:",
+
+    "default_description": "No description"
 }

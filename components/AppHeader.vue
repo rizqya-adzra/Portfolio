@@ -1,28 +1,14 @@
 <template>
-  <div class="font-inter flex items-center py-5 justify-around border-b-[1px] border-[#714AFF] bg-[#101113] text-white">
+  <div class="font-inter flex items-center py-5 justify-around border-b-[1px] border-gray-700 bg-white dark:bg-black text-black dark:text-white duration-500">
     <div>
       <h1 class="text-2xl font-bold">LOGO.</h1>
     </div>
     
     <div class="flex justify-center gap-9 font-bold text-xs">
-      <button @click="navigateTo('/')" :class="[
-        'text-white border-b-[6px] p-2 transition-all',
-        route.path === '/' ? 'border-[#714AFF]' : 'border-transparent hover:border-[#714AFF]'
-      ]">
-        {{ $t('about_me') }}
-      </button>
-      <button @click="navigateTo('/certificate')" :class="[
-        'text-white border-b-[6px] p-2 transition-all',
-        route.path === '/certificate' ? 'border-[#714AFF]' : 'border-transparent hover:border-[#714AFF]'
-      ]">
-        {{ $t('certificate') }}
-      </button>
-      <button class="text-white border-b-4 p-2 border-transparent hover:border-[#714AFF] transition-all">
-        {{ $t('experience') }}
-      </button>
-      <button class="text-white border-b-4 p-2 border-transparent hover:border-[#714AFF] transition-all">
-        {{ $t('blog') }}
-      </button>
+      <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />
+      <BaseNavigationButton :buttonName="$t('certificate')" @click="navigateTo('/certificate')" link="/certificate" />
+      <BaseNavigationButton :buttonName="$t('experience')" />
+      <BaseNavigationButton :buttonName="$t('blog')" />
     </div>
 
     <div></div>

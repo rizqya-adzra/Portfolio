@@ -1,13 +1,13 @@
 <template>
   <button
-    class="relative flex p-8 rounded-3xl border-4 text-white transition-all group"
+    class="relative flex p-6 rounded-3xl border-4 text-white transition-all group hover:bg-white "
     @click="handleClick"
   >
-    <Icon :name="icon" class="text-3xl" />
+    <Icon :name="icon" class="text-5xl" />
 
     <span
       v-if="tooltip"
-      class="absolute bottom-full mb-2 left-1/2 font-inter -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-4 px-5 text-xs text-white opacity-0 transition-opacity duration-200 pointer-events-none group-hover:opacity-100"
+      class="absolute bottom-[14vh] mb-2 left-1/2 font-inter font-bold -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-3 px-5 text-xs text-white opacity-0 transition-opacity duration-200 pointer-events-none group-hover:opacity-100"
     >
       {{ tooltip }}
       <span class="tooltip-arrow"></span>

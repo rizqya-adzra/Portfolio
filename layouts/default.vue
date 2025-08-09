@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col min-h-screen dark:bg-black">
+  <div class="flex flex-col min-h-screen dark:bg-[#101113] duration-500">
     
     <div class="sticky top-0 z-50">
       <AppHeader />
     </div>
 
-    <main class="flex-1 overflow-hidden mb-24">
+    <main class="flex-1 overflow-hidden">
       <slot />
     </main>
 

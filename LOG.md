@@ -22,3 +22,9 @@
 - Mengubah TertiaryButton menjadi ExternalLinkButton
 - Mengubah tampilan TertiaryButton dengan tambahan tooltip
 - Menambahkan Header Kemampuan
+
+[RA] Update 2025-08-09 v1.0.4
+- Memperbaiki PrimaryButton, SecondaryButton, TertiaryButton, AppFooter, AppHeader, VideoPlay, dan LanguageSwitch
+- Menambahkan PopUpCard untuk header Tentang Saya
+- Menambahkan kalimat untuk diterjemahkan di de.json, en.json, dan id.json
+- Mengubah tampilan AppHeader menjadi putih dan hitam tergantung dengan color-mode yang digunakan
