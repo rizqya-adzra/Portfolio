@@ -28,3 +28,9 @@
 - Menambahkan PopUpCard untuk header Tentang Saya
 - Menambahkan kalimat untuk diterjemahkan di de.json, en.json, dan id.json
 - Mengubah tampilan AppHeader menjadi putih dan hitam tergantung dengan color-mode yang digunakan
+
+[RA] Update 2025-08-09 v1.0.5
+- Menambahkan subpage Projects
+- Menambahkan Vertical Carousel
+- Menambahkan SpecialButton untuk subpage Hire Me
+- Menambahkan subpage Sent Me Anything dengan text area dan ExternalLinkButton

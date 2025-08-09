@@ -20,5 +20,11 @@
 - Added PopUpCard for About Me Subpage
 - Added paragraphs to be translated in de.json, en.json, dan id.json 
 
+### Feat V1.0.5
+- Added Project Subpage with Vertical Carousel and Pop Ups
+- Added Hire Me Subpage with SpecialButton
+- Added Send Me Anything Subpage with TextArea and ExternalLinkButton
+
+
 
 

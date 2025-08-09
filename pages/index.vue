@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="bg-[#714AFF] py-24">
+    <div class="bg-[#714AFF] py-12">
       <div class="w-[1200px] mx-auto">
         <h1 class="font-bebas text-white text-8xl text-center">{{ $t('header_2') }}</h1>
         <div class="grid grid-cols-2 gap-12 items-start mt-12">
@@ -44,8 +44,7 @@
                   <BaseTertiaryButton icon="simple-icons:django" tooltip="Django" class="hover:text-[#38be8b]" />
                 </div>
               </div>
-          </div>
-          
+          </div>  
           <div class="text-start">
             <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2.1') }}</p>
             <div class="flex flex-col gap-4">
@@ -59,6 +58,83 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="py-24">
+      <div class="w-[1200px] mx-auto">
+        <div class="grid grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="font-bebas text-[#714AFF] text-8xl">{{ $t('header_3') }}</h1>
+            <p class="mb-4 font-inter font-bold text-black dark:text-white my-3">{{ $t('subheader_3') }}</p>
+            <BasePrimaryButton buttonName="Git Hub Repository" link='https://www.github.com' />
+          </div>
+          <div>
+            <BaseVerticalCarousel :items="carouselItems"/>
+            <div class="flex items-center gap-6 text-gray-700 dark:text-gray-300 text-sm font-medium select-none mt-5">
+              <div class="flex items-center gap-2">
+                <span class="rounded-full w-5 h-5 bg-[#FF4A4D] inline-block"></span>
+                Internship
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-full w-5 h-5 bg-[#F34AFF] inline-block"></span>
+                School
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-full w-5 h-5 bg-[#4A5CFF] inline-block"></span>
+                Personal
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-full w-5 h-5 bg-[#4AFF50] inline-block"></span>
+                Completed
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-full w-5 h-5 bg-[#FFF64A] inline-block"></span>
+                On Going
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#1E1E1E] py-12">
+      <div class="w-[1200px] mx-auto">
+        <div class="flex justify-center gap-24">
+          <div>
+            <h1 class="font-inter text-white text-4xl font-bold">Interested to Hire Me?</h1>
+            <p class="font-inter text-gray-300 mt-2">Please take a look at my CV.</p>
+          </div>
+          <BaseSpecialButton buttonName="view cv here !" />
+        </div>
+      </div>
+    </div>
+
+    <div class="py-24" style="background: linear-gradient(to bottom, #714AFF, #555555);">
+      <div class="w-[1000px] mx-auto">
+        <h1 class="font-bebas text-white text-8xl text-center mt-7">{{ $t('header_4') }}</h1>
+        <div class="flex items-center mt-12">
+          <textarea
+            class="font-inter flex-grow resize-none py-2 rounded-3xl px-6 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-purple-300 bg-[#f7efe7] text-base leading-[64px]"
+            placeholder="Write your thoughts about me here."
+            rows="1"
+            style="vertical-align: middle;"
+          ></textarea>
+          <button class="font-bebas ml-4 bg-black text-white rounded-3xl px-6 py-7 text-3xl hover:bg-gray-800 transition-colors">
+            SEND →
+          </button>
+        </div>
+        <div>
+          <p class="font-inter text-gray-400 text-end mt-2 ">{{ $t('subheader_4') }}</p>
+        </div>
+      </div>
+
+      <div class="flex gap-3 items-center justify-center mt-20">
+        <p class="font-inter text-white font-bold">Follow me here -></p>
+        <BaseExternalLinkButton icon="uil:linkedin" />
+        <BaseExternalLinkButton icon="uil:instagram" />
+        <BaseExternalLinkButton icon="uil:twitter" />
+        <BaseExternalLinkButton icon="uil:github" />
       </div>
     </div>
     
@@ -79,7 +155,8 @@ const popupData = ref({
   title: '',
   subheader: '',
   description: '',
-  buttonName: ''
+  category: '',
+  status: ''
 })
 
 function openPopup(type) {
@@ -107,6 +184,51 @@ function openPopup(type) {
   }
   isPopupVisible.value = true
 }
+
+const carouselItems = [
+  {
+    title: 'COMMUNITY APP',
+    description: 'Lorem ipsum dolor sit amet...',
+    image: 'images/projects/test.jpg',
+    category: 'internship',
+    status: 'completed'
+  },
+  {
+    title: 'REKAP KETERLAMBATAN',
+    description: 'Lorem ipsum dolor sit amet...',
+    image: 'images/projects/test.jpg',
+    category: 'school',
+    status: 'completed'
+  },
+  {
+    title: 'PENGADUAN MASYARAKAT',
+    description: 'Lorem ipsum dolor sit amet...',
+    image: 'images/projects/test.jpg',
+    category: 'internship',
+    status: 'completed'
+  },
+  {
+    title: 'BOOKS HOUSE',
+    description: 'Lorem ipsum dolor sit amet...',
+    image: 'images/projects/test.jpg',
+    category: 'school',
+    status: 'completed'
+  },
+  {
+    title: 'PORTFOLIO',
+    description: 'Lorem ipsum dolor sit amet...',
+    image: 'images/projects/test.jpg',
+    category: 'personal',
+    status: 'ongoing'
+  },
+  {
+    title: 'NOTES APP',
+    description: 'Lorem ipsum dolor sit ametdsadsadadasdadasdasdda adas adas asd as das das a das as as',
+    image: 'images/projects/test.jpg',
+    category: 'personal',
+    status: 'completed'
+  }
+]
 </script>
 
 

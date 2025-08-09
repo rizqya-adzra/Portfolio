@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex p-3 gap-5 rounded-full text-dark hover:text-white bg-gray-300 dark:bg-white dark:text-black font-bold hover:bg-indigo-600 dark:hover:text-white transition-all"
+    class="flex p-3 gap-5 rounded-full text-white border-4 border-white font-bold hover:bg-black transition-all"
     @click="handleClick"
   >
     <Icon :name="icon" class="text-3xl" />

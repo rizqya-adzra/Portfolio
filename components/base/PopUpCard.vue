@@ -49,7 +49,7 @@ const props = defineProps({
   title: { type: String, required: true },
   subheader: { type: String, required: true },
   description: { type: String, required: true },
-  buttonName: { type: String, required: true }
+  buttonName: { type: String }
 });
 </script>
 
