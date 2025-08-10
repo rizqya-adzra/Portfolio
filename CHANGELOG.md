@@ -25,6 +25,14 @@
 - Added Hire Me Subpage with SpecialButton
 - Added Send Me Anything Subpage with TextArea and ExternalLinkButton
 
+### Feat V1.0.6
+- Added PopUpCardDetailed for Vertical Carousel
+- Installed @tailwindcss/line-clamp for truncate words
+- Added PopUpCardDetailed for showing CV.png
+
+
+
+
 
 
 

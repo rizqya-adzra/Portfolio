@@ -18,11 +18,11 @@ import { useRoute, navigateTo } from '#imports'
 const props = defineProps({
   buttonName: {
     type: String,
-    required: true
+    default: ''
   },
   link: {
     type: String,
-    required: true
+    default: ''
   }
 })
 

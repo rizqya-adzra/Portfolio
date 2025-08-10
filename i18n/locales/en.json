@@ -23,6 +23,16 @@
     "header_3": "PROJECTS",
     "subheader_3": "SCHOOL, INTERNSHIP, AND PERSONAL PROJECTS",
 
+    "card_about_this_app": "About This App",
+    "card_works": "Works",
+    "card_other_links": "Other Links",
+
+    "notes_app_description": "A versatile note-taking application designed to help you capture ideas, organize to-do lists, or jot down important things easily and quickly.",
+    "pengaduan_masyarakat_app_description": "A website for Indonesian citizens to submit complaints about local issues, whether related to crime, social matters, or development.",
+    "books_app_description": "Bookhouse is an online platform that offers a wide variety of books to meet your literacy needs. With a user-friendly interface, Bookhouse makes it easy for you to find and purchase your favorite books from various genres and renowned authors.",
+    "keterlambatan_app_description": "This application simplifies the real-time management of student tardiness data for School Administrators and Student Advisors. With an automated recording system, it enhances administrative efficiency and offers customizable reports based on specific time periods. The user-friendly and responsive interface ensures easy access across various devices. Key features include real-time tardiness recording, time-based filters for data analysis, and an interactive dashboard presenting statistics in an intuitive way. The technology stack uses Laravel 10 for the backend and HTML, CSS, Bootstrap, and JavaScript for the frontend.",
+    "portfolio_app_description": "A Nuxt.js-based website created to showcase Rizqya's portfolio. It includes personal information, competitive skills, modern and trend-aligned projects, certifications as proof of expertise, experience summaries, and more.",
+
     "header_4": "SEND ME ANYTHING!",
     "textarea": "Write your thoughts about me here.",
     "subheader_4": "will be sent anonymously, so please be kind and use common sense, thx!",

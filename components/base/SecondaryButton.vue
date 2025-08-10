@@ -14,11 +14,17 @@ export default {
     },
     icon: {
       type: Object
+    },
+    link: {
+      type: String,
+      default: "" 
     }
   },
   methods: {
     handleClick() {
-      if(this.onClick) {
+      if (this.link) {
+        window.open(this.link, "_blank")
+      } else if (this.onClick) {
         this.onClick()
       }
     }

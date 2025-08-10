@@ -34,3 +34,10 @@
 - Menambahkan Vertical Carousel
 - Menambahkan SpecialButton untuk subpage Hire Me
 - Menambahkan subpage Sent Me Anything dengan text area dan ExternalLinkButton
+
+[RA] Update 2025-08-10 v1.0.6
+- Menambahkan PopUpCardDetailed untuk VerticalCarousel
+- Menginstall @tailwindcss/line-clamp (npm install @tailwindcss/line-clamp)
+- Menambahkan PopUpCardDetailed untuk menampilkan CV
+- Menambahkan kalimat di Project untuk diterjemahkan di de.json, en.json, dan id.json
+- Menambahkan props link di PrimaryButton 

@@ -67,7 +67,7 @@
           <div>
             <h1 class="font-bebas text-[#714AFF] text-8xl">{{ $t('header_3') }}</h1>
             <p class="mb-4 font-inter font-bold text-black dark:text-white my-3">{{ $t('subheader_3') }}</p>
-            <BasePrimaryButton buttonName="Git Hub Repository" link='https://www.github.com' />
+            <BasePrimaryButton buttonName="Git Hub Repository" link='https://github.com/rizqya-adzra?tab=repositories' />
           </div>
           <div>
             <BaseVerticalCarousel :items="carouselItems"/>
@@ -105,7 +105,7 @@
             <h1 class="font-inter text-white text-4xl font-bold">Interested to Hire Me?</h1>
             <p class="font-inter text-gray-300 mt-2">Please take a look at my CV.</p>
           </div>
-          <BaseSpecialButton buttonName="view cv here !" />
+          <BaseSpecialButton buttonName="view cv here !" @click="openCvPopup" />
         </div>
       </div>
     </div>
@@ -131,10 +131,10 @@
 
       <div class="flex gap-3 items-center justify-center mt-20">
         <p class="font-inter text-white font-bold">Follow me here -></p>
-        <BaseExternalLinkButton icon="uil:linkedin" />
-        <BaseExternalLinkButton icon="uil:instagram" />
-        <BaseExternalLinkButton icon="uil:twitter" />
-        <BaseExternalLinkButton icon="uil:github" />
+        <BaseExternalLinkButton icon="uil:linkedin" link="https://www.linkedin.com/in/rizqya-adzra/" />
+        <BaseExternalLinkButton icon="uil:instagram" link="https://instagram.com/rizqya_adzrazs" />
+        <BaseExternalLinkButton icon="uil:twitter" link="https://x.com/luxqya_ra" />
+        <BaseExternalLinkButton icon="uil:github" link="https://github.com/rizqya-adzra" />
       </div>
     </div>
     
@@ -146,11 +146,31 @@
       :visible="isPopupVisible"
       @close="isPopupVisible = false"
     />
+
+    <BasePopUpCardDetailed
+      :visible="isCvPopupVisible"
+      @close="isCvPopupVisible = false"
+      :title="cvPopup.title"
+      :subheader="cvPopup.subheader"
+      :image="cvPopup.image"
+    />
   </div>
 </template>
 
 <script setup>
+const isCvPopupVisible = ref(false)
 const isPopupVisible = ref(false)
+
+const cvPopup = ref({
+  title: 'rizqya’s CV',
+  subheader: 'CURRICULUM VITAE',
+  image: '/images/cv.jpg' 
+})
+
+function openCvPopup() {
+  isCvPopupVisible.value = true
+}
+
 const popupData = ref({
   title: '',
   subheader: '',
@@ -188,43 +208,62 @@ function openPopup(type) {
 const carouselItems = [
   {
     title: 'COMMUNITY APP',
-    description: 'Lorem ipsum dolor sit amet...',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'notes_app_description',
+    image: 'images/projects/community.png',
+    github: 'https://github.com/rizqya-adzra/KomunitasApp-API-Django',
+    datetime: '14 January - March 2025',
     category: 'internship',
     status: 'completed'
   },
   {
     title: 'REKAP KETERLAMBATAN',
-    description: 'Lorem ipsum dolor sit amet...',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'keterlambatan_app_description',
+    image: 'images/projects/RekapKeterlambatan.png',
+    github: 'https://github.com/rizqya-adzra/RekapKeterlambatan-Laravel',
+    datetime: '24 November - 22 December 2024',
     category: 'school',
     status: 'completed'
   },
   {
     title: 'PENGADUAN MASYARAKAT',
-    description: 'Lorem ipsum dolor sit amet...',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'pengaduan_masyarakat_app_description',
+    image: 'images/projects/Pengaduan.png',
+    github: 'https://github.com/rizqya-adzra/PengaduanMasyarakat-Laravel',
+    datetime: '10 December - 19 December 2024',
     category: 'internship',
     status: 'completed'
   },
   {
     title: 'BOOKS HOUSE',
-    description: 'Lorem ipsum dolor sit amet...',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'books_app_description',
+    image: 'images/projects/LandingpagePelanggan.png',
+    github: 'https://github.com/rizqya-adzra/BookApp-Laravel',
+    datetime: '17 October - 13 November 2024',
     category: 'school',
     status: 'completed'
   },
   {
     title: 'PORTFOLIO',
-    description: 'Lorem ipsum dolor sit amet...',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'portfolio_app_description',
+    image: 'images/projects/Portfolio.png',
+    github: 'https://github.com/rizqya-adzra/Portfolio',
+    link: 'https://rizqya-portfolio.vercel.app/',
+    datetime: '7 Agustus - 15 Agustus 2025',
     category: 'personal',
     status: 'ongoing'
   },
   {
     title: 'NOTES APP',
-    description: 'Lorem ipsum dolor sit ametdsadsadadasdadasdasdda adas adas asd as das das a das as as',
-    image: 'images/projects/test.jpg',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'notes_app_description',
+    image: 'images/projects/NotesApp.png',
+    github: 'https://github.com/rizqya-adzra/NotesApp-ReactJs',
+    datetime: '8 December 2024',
     category: 'personal',
     status: 'completed'
   }
