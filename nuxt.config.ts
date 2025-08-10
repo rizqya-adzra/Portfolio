@@ -9,6 +9,13 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
+    runtimeConfig: {
+      public: {
+        supabaseUrl: process.env.NUXT_SUPABASE_URL,
+        supabaseKey: process.env.NUXT_SUPABASE_KEY
+      }
+  },
+
   googleFonts: {
     families: {
       Inter: [200, 300, 400, 500, 600, 700],

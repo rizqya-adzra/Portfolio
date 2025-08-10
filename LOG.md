@@ -41,3 +41,9 @@
 - Menambahkan PopUpCardDetailed untuk menampilkan CV
 - Menambahkan kalimat di Project untuk diterjemahkan di de.json, en.json, dan id.json
 - Menambahkan props link di PrimaryButton 
+
+[RA] Update 2025-08-11 v1.0.7
+- Menginstall @supabase/supabase-js (npm install @supabase/supabase-js)
+- Menambahkan .env untuk supabase
+- Menambahkan sekaligus menyambungkan form yang ada di index.vue ke table message di supabase
+- Menambahkan Alert untuk form

@@ -115,19 +115,30 @@
         <h1 class="font-bebas text-white text-8xl text-center mt-7">{{ $t('header_4') }}</h1>
         <div class="flex items-center mt-12">
           <textarea
+            v-model="message"
             class="font-inter flex-grow resize-none py-2 rounded-3xl px-6 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-purple-300 bg-[#f7efe7] text-base leading-[64px]"
             placeholder="Write your thoughts about me here."
             rows="1"
             style="vertical-align: middle;"
           ></textarea>
-          <button class="font-bebas ml-4 bg-black text-white rounded-3xl px-6 py-7 text-3xl hover:bg-gray-800 transition-colors">
-            SEND →
+          <button
+            @click="sendMessage"
+            :disabled="loading"
+            class="font-bebas ml-4 bg-black text-white rounded-3xl px-6 py-7 text-3xl hover:bg-gray-800 transition-colors disabled:opacity-50"
+          >
+            {{ loading ? 'SENDING...' : 'SEND →' }}
           </button>
         </div>
         <div>
           <p class="font-inter text-gray-400 text-end mt-2 ">{{ $t('subheader_4') }}</p>
         </div>
       </div>
+
+      <BaseAlert 
+        v-if="statusMessage" 
+        :type="statusType" 
+        :message="statusMessage" 
+      />
 
       <div class="flex gap-3 items-center justify-center mt-20">
         <p class="font-inter text-white font-bold">Follow me here -></p>
@@ -158,6 +169,13 @@
 </template>
 
 <script setup>
+import { createClient } from '@supabase/supabase-js'
+import { useRuntimeConfig } from '#imports'
+
+const supabaseUrl = useRuntimeConfig().public.supabaseUrl
+const supabaseKey = useRuntimeConfig().public.supabaseKey
+const supabase = createClient(supabaseUrl, supabaseKey)
+
 const isCvPopupVisible = ref(false)
 const isPopupVisible = ref(false)
 
@@ -268,6 +286,80 @@ const carouselItems = [
     status: 'completed'
   }
 ]
+
+const message = ref('')
+const messages = ref([])
+const statusMessage = ref('')
+const statusType = ref('')
+const loading = ref(false)
+
+const lastSentTime = ref(0)
+const messageCount = ref(0) 
+
+onMounted(async () => {
+  if (process.client) {
+    messageCount.value = parseInt(localStorage.getItem('messageCount') || '0')
+  }
+
+  const { data, error } = await supabase
+    .from('messages')
+    .select('*')
+    .order('created_at', { ascending: false })
+
+  if (!error) {
+    messages.value = data
+  }
+})
+
+async function sendMessage() {
+  const now = Date.now()
+
+  if (now - lastSentTime.value < 10000) {
+    statusMessage.value = 'Please wait 10 seconds before sending another message.'
+    statusType.value = 'warning'
+    return
+  }
+
+  if (messageCount.value >= 3) {
+    statusMessage.value = 'You have reached the maximum of 3 messages for this device.'
+    statusType.value = 'error'
+    return
+  }
+
+  if (!message.value.trim()) {
+    statusMessage.value = 'Message cannot be empty!'
+    statusType.value = 'warning'
+    return
+  }
+
+  loading.value = true
+
+  const { error } = await supabase
+    .from('messages')
+    .insert([{ content: message.value }])
+
+  if (error) {
+    console.error(error)
+    statusMessage.value = 'Failed to send message.'
+    statusType.value = 'error'
+  } else {
+    statusMessage.value = 'Message sent successfully!'
+    statusType.value = 'success'
+    message.value = ''
+
+    lastSentTime.value = now
+    messageCount.value += 1
+    if (process.client) {
+      localStorage.setItem('messageCount', messageCount.value.toString())
+    }
+
+    const { data } = await supabase
+      .from('messages')
+      .select('*')
+      .order('created_at', { ascending: false })
+    messages.value = data
+  }
+
+  loading.value = false
+}
 </script>
-
-

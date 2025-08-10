@@ -30,6 +30,12 @@
 - Installed @tailwindcss/line-clamp for truncate words
 - Added PopUpCardDetailed for showing CV.png
 
+### Feat V1.0.7
+- Added @supabase/supabase-js for database
+- Added and connected message form to supabase postgre
+- Added alert for message status (sent or not)
+
+
 
 
 
