@@ -9,8 +9,8 @@
       :key="index"
       class="flex items-center justify-between rounded-2xl my-2 p-2 min-h-[130px] cursor-pointer  duration-500"
       :class="[
-        'bg-[#edf5ff] dark:bg-[#2b2b2b]',
-        hoveredIndex === index ? 'bg-indigo-100 dark:bg-blue-900' : ''
+        'bg-[#f7f7f7] dark:bg-[#2b2b2b]',
+        hoveredIndex === index ? 'bg-gray-200 dark:bg-indigo-900' : ''
       ]"
       @click="openPopup(item)"
       @mouseenter="() => { hoveredIndex = index; stopAutoScroll() }"

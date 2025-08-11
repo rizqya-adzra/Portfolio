@@ -7,6 +7,7 @@ export default {
         bebas: ["Bebas Neue", "cursive"],
         inter: ["Inter", "cursive"],
         jaro: ["Jaro", "cursive"],
+        orelega: ["Orelega One", "cursive"],
       },
     },
   },

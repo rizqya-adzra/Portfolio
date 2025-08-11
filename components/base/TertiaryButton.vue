@@ -1,13 +1,25 @@
 <template>
   <button
-    class="relative flex p-6 rounded-3xl border-4 text-white transition-all group hover:bg-white "
+    class="relative flex p-6 rounded-3xl border-4 transition-all duration-500 ease-in-out group"
+    :style="isHovered ? { color: hoverColor } : {}"
+    :class="{
+      'bg-white scale-110 shadow-xl brightness-110': isHovered,
+      'hover:bg-white text-indigo-950 hover:scale-110 hover:shadow-xl hover:brightness-110': true
+    }"
     @click="handleClick"
   >
-    <Icon :name="icon" class="text-5xl" />
+    <Icon
+      :name="icon"
+      class="text-5xl transition-transform duration-500"
+    />
 
     <span
       v-if="tooltip"
-      class="absolute bottom-[14vh] mb-2 left-1/2 font-inter font-bold -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-3 px-5 text-xs text-white opacity-0 transition-opacity duration-200 pointer-events-none group-hover:opacity-100"
+      class="absolute bottom-[105px] mb-2 left-1/2 font-inter font-bold -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-3 px-5 text-xs text-white opacity-0 transition-opacity duration-300 pointer-events-none"
+      :class="{
+        'opacity-100': isHovered,
+        'group-hover:opacity-100': true
+      }"
     >
       {{ tooltip }}
       <span class="tooltip-arrow"></span>
@@ -15,30 +27,18 @@
   </button>
 </template>
 
-<script>
-export default {
-  props: {
-    icon: {
-      type: String,
-      default: "uil:instagram"
-    },
-    link: {
-      type: String,
-      default: "" 
-    },
-    tooltip: {
-      type: String,
-      default: "Tooltip"
-    }
-  },
-  methods: {
-    handleClick() {
-      if (this.link) {
-        window.open(this.link, "_blank")
-      } else if (this.onClick) {
-        this.onClick()
-      }
-    }
+<script setup>
+const props = defineProps({
+  icon: { type: String, default: "uil:instagram" },
+  link: { type: String, default: "" },
+  tooltip: { type: String, default: "Tooltip" },
+  hoverColor: { type: String, default: "#ffffff" },
+  isHovered: { type: Boolean, default: false }
+})
+
+const handleClick = () => {
+  if (props.link) {
+    window.open(props.link, "_blank")
   }
 }
 </script>
@@ -53,11 +53,6 @@ export default {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #2d3748; 
-}
-
-button:hover span {
-  opacity: 1;
-  pointer-events: auto;
+  border-top: 6px solid #101113;
 }
 </style>

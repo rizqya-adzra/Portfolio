@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full overflow-hidden bg-black">
-    <div class="relative w-full" style="aspect-ratio: 23 / 9;">
+    <div class="relative w-full" style="aspect-ratio: 21 / 9;">
       <video
         autoplay
         muted
@@ -15,8 +15,8 @@
 
       <div class="absolute inset-0 bg-black/50 z-10"></div>
 
-      <div class="absolute inset-0 flex flex-col gap-3 items-center justify-center z-20 text-white -translate-y-11">
-        <p class="font-jaro text-8xl font-bold">{{ $t('welcome') }}</p>
+      <div class="absolute inset-0 flex flex-col gap-2 items-center justify-center z-20  text-[#fff7e9] -translate-y-11">
+        <p class="font-jaro text-9xl tracking-tighter">{{ $t('welcome') }}</p>
         <p class="font-inter font-bold text-xs">{{ $t('introduction') }}</p>
       </div>
     </div>

@@ -53,3 +53,13 @@
 - Memperbaiki warna VerticalCarousel berserta parent dan childnya
 - Menambahkan assets/scrollbar.css untuk mengubah desain default scrollbar dan membuatnya dinamis untuk nuxtjs colormode
 
+[RA] Update 2025-08-11 v1.1.0
+- Menambahkan content di page certificate.vue
+- Memperbaiki padding untuk Abilities subpage
+- Mengubah ukuran semua title di subpage menjadi text-9xl 
+- Menambahkan Component MansoryGrid 
+- Menambahkan filter atau sortir berdasarkan nama, datetime, dan nama company
+- Memperbaiki warna card untuk light mode di VerticalCarousel
+- Menambahkan Component Dropdown untuk sortir sertifikasi
+- Mengubah ukuran PrimaryKey yang tadinya text-xl menjadi text-2xl
+- Mengubah ukuran tooltip di supbage Abilities yang tadinya memakai px menjadi vh

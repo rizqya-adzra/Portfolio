@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     families: {
       Inter: [200, 300, 400, 500, 600, 700],
       Jaro: [200, 300, 400, 500, 600, 700],
+      'Orelega One': [200, 300, 400, 500, 600, 700],
       'Bebas Neue': [200, 300, 400, 500, 600, 700]
     },
     display: 'swap',

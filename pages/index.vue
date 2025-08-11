@@ -4,13 +4,13 @@
 
     <div class="py-24">
       <div class="w-[1200px] mx-auto">
-        <h1 class="font-bebas text-[#714AFF] text-8xl">{{ $t('header_1') }}</h1>
+        <h1 class="font-bebas text-[#714AFF] text-9xl">{{ $t('header_1') }}</h1>
         <div class="grid grid-cols-2 gap-12 items-end mt-12">
           <div>
             <p class="mb-4 font-inter font-bold text-black dark:text-white">{{ $t('subheader_1') }}</p>
             <p class="font-inter text-gray-700 dark:text-gray-300">{{ $t('description_1') }}</p>
   
-            <div class="flex gap-5 mt-12">
+            <div class="flex gap-5 mt-5">
               <BaseSecondaryButton buttonName="Back end" @click="openPopup('backend')" />
               <BaseSecondaryButton buttonName="Fullstack" @click="openPopup('fullstack')" />
               <BaseSecondaryButton buttonName="Front end" @click="openPopup('frontend')" />
@@ -24,35 +24,47 @@
       </div>
     </div>
 
-    <div class="bg-[#714AFF] py-12">
+    <div class="bg-[#714AFF] py-24">
       <div class="w-[1200px] mx-auto">
-        <h1 class="font-bebas text-white text-8xl text-center">{{ $t('header_2') }}</h1>
+        <h1 class="font-bebas text-white text-9xl text-center">{{ $t('header_2') }}</h1>
         <div class="grid grid-cols-2 gap-12 items-start mt-12">
           <div>
-              <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2') }}</p>
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-3">
-                  <BaseTertiaryButton icon="mdi:vuejs" tooltip="Vue JS" class="hover:text-[#40ad36]" />
-                  <BaseTertiaryButton icon="simple-icons:nuxt" tooltip="Nuxt JS" class="hover:text-[#40ad36]" />
-                  <BaseTertiaryButton icon="simple-icons:react" tooltip="React JS" class="hover:text-[#4585d8]" />
-                  <BaseTertiaryButton icon="simple-icons:javascript" tooltip="Javascript" class="hover:text-[#a79e26]" />
-                </div>
-                <div class="flex gap-3">
-                  <BaseTertiaryButton icon="simple-icons:php" tooltip="PHP" class="hover:text-[#5538be]" />
-                  <BaseTertiaryButton icon="simple-icons:laravel" tooltip="Laravel" class="hover:text-[#be3838]" />
-                  <BaseTertiaryButton icon="simple-icons:python" tooltip="Python" class="hover:text-[#38be8b]" />
-                  <BaseTertiaryButton icon="simple-icons:django" tooltip="Django" class="hover:text-[#38be8b]" />
-                </div>
+            <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2') }}</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-3">
+                <BaseTertiaryButton
+                  v-for="(btn, index) in allButtons.slice(0, 4)"
+                  :key="index"
+                  :icon="btn.icon"
+                  :tooltip="btn.tooltip"
+                  :hoverColor="btn.hoverColor"
+                  :isHovered="activeIndex === index"
+                />
               </div>
-          </div>  
+              <div class="flex gap-3">
+                <BaseTertiaryButton
+                  v-for="(btn, index) in allButtons.slice(4, 8)"
+                  :key="index+4"
+                  :icon="btn.icon"
+                  :tooltip="btn.tooltip"
+                  :hoverColor="btn.hoverColor"
+                  :isHovered="activeIndex === (index+4)"
+                />
+              </div>
+            </div>
+          </div>
           <div class="text-start">
             <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2.1') }}</p>
             <div class="flex flex-col gap-4">
               <div class="flex gap-3 justify-start">
-                <BaseTertiaryButton icon="simple-icons:figma" tooltip="Figma" class="hover:text-[#714AFF]" />
-                <BaseTertiaryButton icon="simple-icons:github" tooltip="Github" class="hover:text-[#11103d]" />
-                <BaseTertiaryButton icon="simple-icons:trello" tooltip="Trello" class="hover:text-[#385cbe]" />
-                <BaseTertiaryButton icon="simple-icons:notion" tooltip="Notion" class="hover:text-[#714AFF]" />
+                <BaseTertiaryButton
+                  v-for="(btn, index) in allButtons.slice(8, 12)"
+                  :key="index+8"
+                  :icon="btn.icon"
+                  :tooltip="btn.tooltip"
+                  :hoverColor="btn.hoverColor"
+                  :isHovered="activeIndex === (index+8)"
+                />
               </div>
               <p class="font-inter text-gray-300">{{ $t('description_2') }}</p>
             </div>
@@ -65,7 +77,7 @@
       <div class="w-[1200px] mx-auto">
         <div class="grid grid-cols-2 gap-12 items-center">
           <div>
-            <h1 class="font-bebas text-[#714AFF] text-8xl">{{ $t('header_3') }}</h1>
+            <h1 class="font-bebas text-[#714AFF] text-9xl">{{ $t('header_3') }}</h1>
             <p class="mb-4 font-inter font-bold text-black dark:text-white my-3">{{ $t('subheader_3') }}</p>
             <BasePrimaryButton buttonName="Git Hub Repository" link='https://github.com/rizqya-adzra?tab=repositories' />
           </div>
@@ -112,7 +124,7 @@
 
     <div class="py-24" style="background: linear-gradient(to bottom, #714AFF, #555555);">
       <div class="w-[1000px] mx-auto">
-        <h1 class="font-bebas text-white text-8xl text-center mt-7">{{ $t('header_4') }}</h1>
+        <h1 class="font-bebas text-white text-9xl text-center mt-7">{{ $t('header_4') }}</h1>
         <div class="flex items-center mt-12">
           <textarea
             v-model="message"
@@ -353,4 +365,36 @@ async function sendMessage() {
 
   loading.value = false
 }
+
+const activeIndex = ref(0)
+const allButtons = ref([
+  { icon: 'mdi:vuejs', tooltip: 'Vue JS', hoverColor: '#40ad36' },
+  { icon: 'simple-icons:nuxt', tooltip: 'Nuxt JS', hoverColor: '#40ad36' },
+  { icon: 'simple-icons:react', tooltip: 'React JS', hoverColor: '#4585d8' },
+  { icon: 'simple-icons:javascript', tooltip: 'Javascript', hoverColor: '#a79e26' },
+
+  { icon: 'simple-icons:php', tooltip: 'PHP', hoverColor: '#5538be' },
+  { icon: 'simple-icons:laravel', tooltip: 'Laravel', hoverColor: '#be3838' },
+  { icon: 'simple-icons:python', tooltip: 'Python', hoverColor: '#38be8b' },
+  { icon: 'simple-icons:django', tooltip: 'Django', hoverColor: '#38be8b' },
+
+  { icon: 'simple-icons:figma', tooltip: 'Figma', hoverColor: '#714AFF' },
+  { icon: 'simple-icons:github', tooltip: 'Github', hoverColor: '#11103d' },
+  { icon: 'simple-icons:trello', tooltip: 'Trello', hoverColor: '#385cbe' },
+  { icon: 'simple-icons:notion', tooltip: 'Notion', hoverColor: '#714AFF' },
+])
+
+let intervalId = null
+
+onMounted(() => {
+  let i = 0
+  intervalId = setInterval(() => {
+    activeIndex.value = i
+    i = (i + 1) % allButtons.value.length
+  }, 2000)
+})
+
+onBeforeUnmount(() => {
+  clearInterval(intervalId)
+})
 </script>
