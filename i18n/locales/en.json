@@ -23,7 +23,7 @@
     "header_3": "PROJECTS",
     "subheader_3": "SCHOOL, INTERNSHIP, AND PERSONAL PROJECTS",
 
-    "card_about_this_app": "About This App",
+    "card_about_this_app": "About",
     "card_works": "Works",
     "card_other_links": "Other Links",
 
@@ -40,5 +40,7 @@
     "footer_1": "© 2025 All rights reserved. Made with love featuring NuxtJs",
     "footer_2": "For inquiries, collaboration, and job offers please contact me through e-mail:",
 
-    "default_description": "No description"
+    "default_description": "No description",
+
+    "react_description": "This class is intended for a Front-End Web Developer who wants to develop a website with UI components that are reusable, declarative, and reactive to data changes. By the end of this class, students will be able to build a web application with React utilizing functional components, stateful components, and controlled components."
 }

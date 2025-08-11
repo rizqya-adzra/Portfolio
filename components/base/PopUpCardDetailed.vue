@@ -41,7 +41,19 @@
               alt="Popup image"
               class="w-full h-full object-cover rounded-xl"
             />
-            <p class="font-inter text-gray-700 dark:text-gray-300 mt-2 text-xs text-end mr-3"  v-if="description">- Berasal dari Landing Page</p>
+            <img
+              v-if="image_2"
+              :src="image_2"
+              alt="Popup image"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <img
+              v-if="image_3"
+              :src="image_3"
+              alt="Popup image"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <p class="font-inter text-gray-700 dark:text-gray-300 mt-2 text-xs text-end mr-3"  v-if="github">- Berasal dari Landing Page</p>
             <h3 class="font-inter font-bold mt-5 dark:text-white" v-if="description">{{ $t('card_about_this_app') }}</h3>
             <p
             v-if="description"
@@ -57,8 +69,8 @@
           <div class="py-2 min-w-20 text-center rounded-3xl text-xs text-white font-inter font-bold" v-if="category" :style="{ backgroundColor: categoryColor || '#999999'}">{{ category }}</div>
           <div class="py-2 min-w-20 text-center rounded-3xl text-xs text-white font-inter font-bold" v-if="status" :style="{ backgroundColor: statusColor || '#999999' }">{{ status }}</div>
         </div>
-        <h3 class="font-inter font-bold mt-5 dark:text-white" v-if="github">{{ $t('card_other_links') }}</h3>
-        <div class="mt-1 flex gap-2">
+        <h3 class="font-inter font-bold mt-5 dark:text-white">{{ $t('card_other_links') }}</h3>
+          <div class="mt-1 flex gap-2">
             <BaseSecondaryButton v-if="link" buttonName="link" :link="link" />
             <BaseSecondaryButton v-if="github" buttonName="github" :link="github" icon="" />
           </div>
@@ -77,6 +89,8 @@ const props = defineProps({
   subheader: { type: String, required: true },
   description: { type: String, default: '' },
   image: { type: String, default: '' },
+  image_2: { type: String, default: '' },
+  image_3: { type: String, default: '' },
   github: { type: String, default: '' },
   link: { type: String, default: '' },
   datetime: { type: String, default: '' },

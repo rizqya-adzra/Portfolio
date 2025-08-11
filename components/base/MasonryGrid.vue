@@ -3,7 +3,8 @@
     <div
       v-for="item in items"
       :key="item.id"
-      class="masonry-item bg-gray-100 dark:bg-[#2b2b2b] rounded-3xl overflow-hidden duration-500"
+      class="masonry-item bg-gray-100 hover:bg-gray-200 dark:hover:bg-indigo-900 dark:bg-[#2b2b2b] rounded-3xl cursor-pointer overflow-hidden duration-500"
+      @click="emit('clickItem', item)"
     >
       <img
         :src="item.image"
@@ -13,7 +14,7 @@
       <div class="px-4">
         <div class="flex items-center text-gray-500 text-sm justify-between">
           <span
-            class="py-2 min-w-20 text-center rounded-3xl text-xs text-white bg-black dark:text-black dark:bg-white font-inter font-bold"
+            class="p-2 min-w-20 text-center rounded-3xl text-xs text-white bg-black dark:text-black dark:bg-white font-inter font-bold"
           >
             {{ item.company }}
           </span>
@@ -37,6 +38,8 @@ const props = defineProps({
     default: () => [],
   },
 });
+
+const emit = defineEmits(['clickItem'])
 </script>
 
 <style scoped>

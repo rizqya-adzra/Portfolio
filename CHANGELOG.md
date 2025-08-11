@@ -39,6 +39,13 @@
 - Fixed Anonymous Message feature
 - Added new responsive Scrollbar design
 
+### Feat V1.1.0
+- Added contents in certificate.vue page
+- Added MasonryGrid Component
+- Added filter or sort for certificate 
+
+### Feat V1.1.1
+- Added PopUpCardDetailed to be connected with MasonryGrid
 
 
 

@@ -63,3 +63,7 @@
 - Menambahkan Component Dropdown untuk sortir sertifikasi
 - Mengubah ukuran PrimaryKey yang tadinya text-xl menjadi text-2xl
 - Mengubah ukuran tooltip di supbage Abilities yang tadinya memakai px menjadi vh
+
+[RA] Update 2025-08-11 v1.1.1
+- Menambahkan Component PopUpCardDetailed di page certificate.vue dan menghubungkannya dengan MasonryGrid
+- Menambahkan props image_2 dan image_3 di Component PopUpCardDetailed

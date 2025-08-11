@@ -21,14 +21,31 @@
         </div>
       </div>
 
-      <BaseMasonryGrid :items="sortedItems" />
+      <BaseMasonryGrid 
+        :items="sortedItems" 
+        @clickItem="openPopup" 
+      />
     </div>
   </div>
+
+  <BasePopUpCardDetailed
+    :visible="IsPopupVisible"
+    :title="popupItem?.title || ''"
+    :description="$t(popupItem?.description || 'default_description')"
+    :image="popupItem?.image || ''"
+    :image_2="popupItem?.image_2 || ''"
+    :image_3="popupItem?.image_3 || ''"
+    :link="popupItem?.link || ''"
+    :datetime="popupItem?.datetime || ''"
+    @close="IsPopupVisible = false"
+  />
 </template>
 
 <script setup>
 const sortBy = ref('')
 const filterCompany = ref('all')
+const IsPopupVisible = ref(false)
+const popupItem = ref(null)
 
 const sortOptions = [
   { label: 'Name', value: 'title' },
@@ -39,10 +56,12 @@ const dataItems = [
   {
     id: 1,
     image: '/images/certificates/react.png',
+    image_2: '/images/certificates/react_2.png',
     company: 'Dicoding',
     datetime: '12/2024 - 12/2027',
     title: 'BELAJAR MEMBUAT APLIKASI WEB DENGAN REACT',
-    description: 'Ini adalah deskripsi dari item pertama.',
+    description: 'react_description',
+    link: 'https://www.dicoding.com/certificates/N9ZOY1K8YPG5',
   },
   {
     id: 10,
@@ -125,6 +144,11 @@ const dataItems = [
     description: 'lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
   },
 ]
+
+function openPopup(item) {
+  popupItem.value = item
+  IsPopupVisible.value = true
+}
 
 const companyOptions = computed(() => {
   const companies = Array.from(new Set(dataItems.map(item => item.company)))

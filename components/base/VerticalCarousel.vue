@@ -7,7 +7,7 @@
     <div
       v-for="(item, index) in [...items, ...items]"
       :key="index"
-      class="flex items-center justify-between rounded-2xl my-2 p-2 min-h-[130px] cursor-pointer  duration-500"
+      class="flex items-center justify-between rounded-2xl my-2 p-2 min-h-[130px] cursor-pointer duration-500"
       :class="[
         'bg-[#f7f7f7] dark:bg-[#2b2b2b]',
         hoveredIndex === index ? 'bg-gray-200 dark:bg-indigo-900' : ''

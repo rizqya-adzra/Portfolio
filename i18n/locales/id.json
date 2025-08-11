@@ -22,7 +22,7 @@
     "header_3": "PROJEK",
     "subheader_3": "BERISI PROJEK SEKOLAH, PROJEK MAGANG, DAN PROJEK PRIBADI",
 
-    "card_about_this_app": "Tentang Aplikasi Ini",
+    "card_about_this_app": "Tentang",
     "card_works": "Pengerjaan",
     "card_other_links": "Link Lainnya",
 
@@ -40,5 +40,7 @@
     "footer_1": "© 2025 Semua hak dilindungi. Dibuat dengan cintahh menggunakan NuxtJs",
     "footer_2": "Untuk pertanyaan, kerja sama, dan tawaran pekerjaan, silakan hubungi saya melalui email:",
 
-    "default_description": "Tidak ada deskripsi"
+    "default_description": "Tidak ada deskripsi", 
+
+    "react_description": "Kelas ini ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang komponen UI-nya reusable, deklaratif, dan bersifat reaktif terhadap perubahan data. Di akhir kelas ini, siswa dapat membuat aplikasi web dengan React yang memanfaatkan functional component, stateful component, dan controlled component."
 }

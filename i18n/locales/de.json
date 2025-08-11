@@ -23,7 +23,7 @@
     "header_3": "PROJEKTE",
     "subheader_3": "SCHUL-, PRAKTIKUMS- UND PERSÖNLICHE PROJEKTE",
 
-    "card_about_this_app": "Über Diese App",
+    "card_about_this_app": "Über",
     "card_works": "Funktionsweise",
     "card_other_links": "Andere Links",
 
@@ -39,5 +39,7 @@
     "footer_1": "© 2025 Alle Rechte vorbehalten. Mit Liebe erstellt mit NuxtJs",
     "footer_2": "Für Anfragen, Zusammenarbeit und Jobangebote kontaktieren Sie mich bitte per E-Mail:",
 
-    "default_description": "Keine Beschreibung"
+    "default_description": "Keine Beschreibung",
+
+    "react_description": "Dieser Kurs richtet sich an Front-End-Webentwickler, die eine Website mit UI-Komponenten entwickeln möchten, die wiederverwendbar, deklarativ und reaktiv auf Datenänderungen sind. Am Ende dieses Kurses werden die Teilnehmer in der Lage sein, eine Webanwendung mit React zu erstellen, die funktionale Komponenten, zustandsbehaftete Komponenten und kontrollierte Komponenten nutzt."
 }
