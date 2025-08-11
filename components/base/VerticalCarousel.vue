@@ -7,7 +7,7 @@
     <div
       v-for="(item, index) in [...items, ...items]"
       :key="index"
-      class="flex items-center justify-between rounded-2xl my-2 p-2 min-h-[130px] cursor-pointer"
+      class="flex items-center justify-between rounded-2xl my-2 p-2 min-h-[130px] cursor-pointer  duration-500"
       :class="[
         'bg-[#edf5ff] dark:bg-[#2b2b2b]',
         hoveredIndex === index ? 'bg-indigo-100 dark:bg-blue-900' : ''
@@ -81,14 +81,14 @@ const SCROLL_STEP = 1
 const SCROLL_INTERVAL = 30
 
 const categoryColors = {
-  internship: '#FF4A4D',
-  school: '#F34AFF',
-  personal: '#4A5CFF'
+  internship: '#E63946',
+  school: '#6A4C93',
+  personal: '#1D3557'
 }
 
 const statusColors = {
-  completed: '#4AFF50',
-  ongoing: '#FFF64A'
+  completed: '#2A9D8F',
+  ongoing: '#F4A261'
 }
 
 const hoveredIndex = ref(null)

@@ -35,6 +35,10 @@
 - Added and connected message form to supabase postgre
 - Added alert for message status (sent or not)
 
+### Feat V1.0.8
+- Fixed Anonymous Message feature
+- Added new responsive Scrollbar design
+
 
 
 

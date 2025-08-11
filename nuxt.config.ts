@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
+  css: [
+    '~/assets/css/scrollbar.css'
+  ],
+
     runtimeConfig: {
       public: {
         supabaseUrl: process.env.NUXT_SUPABASE_URL,

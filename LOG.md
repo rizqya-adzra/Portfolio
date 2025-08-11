@@ -42,8 +42,14 @@
 - Menambahkan kalimat di Project untuk diterjemahkan di de.json, en.json, dan id.json
 - Menambahkan props link di PrimaryButton 
 
-[RA] Update 2025-08-11 v1.0.7
+[RA] Update 2025-08-10 v1.0.7
 - Menginstall @supabase/supabase-js (npm install @supabase/supabase-js)
 - Menambahkan .env untuk supabase
 - Menambahkan sekaligus menyambungkan form yang ada di index.vue ke table message di supabase
 - Menambahkan Alert untuk form
+
+[RA] Update 2025-08-11 v1.0.8
+- Memeperbaiki Alert pada message ketika dikirimkan ke supabase
+- Memperbaiki warna VerticalCarousel berserta parent dan childnya
+- Menambahkan assets/scrollbar.css untuk mengubah desain default scrollbar dan membuatnya dinamis untuk nuxtjs colormode
+

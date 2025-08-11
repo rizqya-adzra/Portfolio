@@ -73,23 +73,23 @@
             <BaseVerticalCarousel :items="carouselItems"/>
             <div class="flex items-center gap-6 text-gray-700 dark:text-gray-300 text-sm font-medium select-none mt-5">
               <div class="flex items-center gap-2">
-                <span class="rounded-full w-5 h-5 bg-[#FF4A4D] inline-block"></span>
+                <span class="rounded-full w-5 h-5 bg-[#E63946] inline-block"></span>
                 Internship
               </div>
               <div class="flex items-center gap-2">
-                <span class="rounded-full w-5 h-5 bg-[#F34AFF] inline-block"></span>
+                <span class="rounded-full w-5 h-5 bg-[#6A4C93] inline-block"></span>
                 School
               </div>
               <div class="flex items-center gap-2">
-                <span class="rounded-full w-5 h-5 bg-[#4A5CFF] inline-block"></span>
+                <span class="rounded-full w-5 h-5 bg-[#1D3557] inline-block"></span>
                 Personal
               </div>
               <div class="flex items-center gap-2">
-                <span class="rounded-full w-5 h-5 bg-[#4AFF50] inline-block"></span>
+                <span class="rounded-full w-5 h-5 bg-[#2A9D8F] inline-block"></span>
                 Completed
               </div>
               <div class="flex items-center gap-2">
-                <span class="rounded-full w-5 h-5 bg-[#FFF64A] inline-block"></span>
+                <span class="rounded-full w-5 h-5 bg-[#F4A261] inline-block"></span>
                 On Going
               </div>
             </div>
@@ -297,9 +297,6 @@ const lastSentTime = ref(0)
 const messageCount = ref(0) 
 
 onMounted(async () => {
-  if (process.client) {
-    messageCount.value = parseInt(localStorage.getItem('messageCount') || '0')
-  }
 
   const { data, error } = await supabase
     .from('messages')
@@ -320,15 +317,9 @@ async function sendMessage() {
     return
   }
 
-  if (messageCount.value >= 3) {
-    statusMessage.value = 'You have reached the maximum of 3 messages for this device.'
-    statusType.value = 'error'
-    return
-  }
-
   if (!message.value.trim()) {
     statusMessage.value = 'Message cannot be empty!'
-    statusType.value = 'warning'
+    statusType.value = 'error'
     return
   }
 

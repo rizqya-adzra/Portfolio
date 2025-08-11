@@ -42,7 +42,7 @@
               class="w-full h-full object-cover rounded-xl"
             />
             <p class="font-inter text-gray-700 dark:text-gray-300 mt-2 text-xs text-end mr-3"  v-if="description">- Berasal dari Landing Page</p>
-            <h3 class="font-inter font-bold mt-5" v-if="description">{{ $t('card_about_this_app') }}</h3>
+            <h3 class="font-inter font-bold mt-5 dark:text-white" v-if="description">{{ $t('card_about_this_app') }}</h3>
             <p
             v-if="description"
             class="font-inter text-gray-700 dark:text-gray-300 leading-relaxed mt-2"
@@ -51,13 +51,13 @@
           </p>
         </div>
         
-        <h3 class="font-inter font-bold mt-5"  v-if="datetime">{{ $t('card_works') }}</h3>
+        <h3 class="font-inter font-bold mt-5 dark:text-white"  v-if="datetime">{{ $t('card_works') }}</h3>
         <div class="mt-1 flex gap-2">
-          <div class="p-2 min-w-20 text-center rounded-xl text-xs text-white bg-[#714AFF] font-inter font-bold" v-if="datetime">{{ datetime }}</div>
-          <div class="py-2 min-w-20 text-center rounded-xl text-xs text-white font-inter font-bold" v-if="category" :style="{ backgroundColor: categoryColor || '#999999'}">{{ category }}</div>
-          <div class="py-2 min-w-20 text-center rounded-xl text-xs text-black font-inter font-bold" v-if="status" :style="{ backgroundColor: statusColor || '#999999' }">{{ status }}</div>
+          <div class="p-2 min-w-20 text-center rounded-3xl text-xs text-white bg-[#714AFF] font-inter font-bold" v-if="datetime">{{ datetime }}</div>
+          <div class="py-2 min-w-20 text-center rounded-3xl text-xs text-white font-inter font-bold" v-if="category" :style="{ backgroundColor: categoryColor || '#999999'}">{{ category }}</div>
+          <div class="py-2 min-w-20 text-center rounded-3xl text-xs text-white font-inter font-bold" v-if="status" :style="{ backgroundColor: statusColor || '#999999' }">{{ status }}</div>
         </div>
-        <h3 class="font-inter font-bold mt-5" v-if="github">{{ $t('card_other_links') }}</h3>
+        <h3 class="font-inter font-bold mt-5 dark:text-white" v-if="github">{{ $t('card_other_links') }}</h3>
         <div class="mt-1 flex gap-2">
             <BaseSecondaryButton v-if="link" buttonName="link" :link="link" />
             <BaseSecondaryButton v-if="github" buttonName="github" :link="github" icon="" />
