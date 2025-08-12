@@ -47,6 +47,10 @@
 ### Feat V1.1.1
 - Added PopUpCardDetailed to be connected with MasonryGrid
 
+### Feat V1.2.0
+- Added contents in experience.vue page
+- Added TimelineItem Component
+
 
 
 

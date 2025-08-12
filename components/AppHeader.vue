@@ -7,7 +7,7 @@
     <div class="flex justify-center gap-9 font-bold text-xs">
       <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />
       <BaseNavigationButton :buttonName="$t('certificate')" @click="navigateTo('/certificate')" link="/certificate" />
-      <BaseNavigationButton :buttonName="$t('experience')" />
+      <BaseNavigationButton :buttonName="$t('experience')" @click="navigateTo('/experience')" link="/experience" />
       <BaseNavigationButton :buttonName="$t('blog')" />
     </div>
 

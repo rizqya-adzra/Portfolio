@@ -67,3 +67,7 @@
 [RA] Update 2025-08-11 v1.1.1
 - Menambahkan Component PopUpCardDetailed di page certificate.vue dan menghubungkannya dengan MasonryGrid
 - Menambahkan props image_2 dan image_3 di Component PopUpCardDetailed
+
+[RA] Update 2025-08-12 v1.2.0
+- Menambahkan content di page experience.vue
+- Menambahkan Component TimelineItem untuk page experience.vue
