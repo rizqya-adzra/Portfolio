@@ -51,6 +51,9 @@
 - Added contents in experience.vue page
 - Added TimelineItem Component
 
+### Feat V1.2.1
+- Added Responsiveness to all pages
+
 
 
 

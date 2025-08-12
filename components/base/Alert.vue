@@ -1,5 +1,9 @@
 <template>
-  <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-xs w-full">
+  <div
+    class="fixed z-50 flex flex-col gap-2 max-w-xs w-full
+           top-4 left-1/2 -translate-x-1/2
+           sm:top-auto sm:bottom-4 sm:right-4 sm:left-auto sm:translate-x-0"
+  >
     <TransitionGroup name="toast-fade" tag="div">
       <div
         v-for="toast in toasts"
@@ -62,8 +66,6 @@ watch(
     }, props.duration)
   }
 )
-
-
 
 function getIconName(type) {
   if (type === 'success') return 'heroicons:check-circle'

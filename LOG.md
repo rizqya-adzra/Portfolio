@@ -71,3 +71,8 @@
 [RA] Update 2025-08-12 v1.2.0
 - Menambahkan content di page experience.vue
 - Menambahkan Component TimelineItem untuk page experience.vue
+
+[RA] Update 2025-08-12 v1.2.1
+- Menambahkan Responsive di seluruh halaman dan hampir seluruh Component
+- Menambahkan Title di seluruh page
+- Memperbaiki Dark and Light Mode Toggle yang awalnya tidak sinkron dengan pilihan color-mode user, menjadi sinkron dengan menyambungkannya dengan onMounted

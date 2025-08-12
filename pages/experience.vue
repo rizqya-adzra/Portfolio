@@ -1,16 +1,21 @@
 <template>
   <div>
     <div class="py-16">
-    <div class="w-[1200px] mx-auto">
-      <h1 class="font-bebas text-9xl text-[#714AFF] mb-5">{{ $t('experience') }}</h1>
-      <BaseTimelineItem :items="TimelineData" />
-    </div>
-    <p class="font-inter font-bold text-[#714AFF] text-center mt-6  ">AND THE JOURNEYS CONTINUE . . .</p>
+      <div class="max-w-[700px] lg:max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <h1 class="font-bebas text-7xl md:text-8xl lg:text-9xl text-[#714AFF] mb-2 text-center sm:text-start">
+          {{ $t('experience') }}
+        </h1>
+        <BaseTimelineItem :items="TimelineData" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
+useHead({
+  title: 'RA | Experience'
+})
+
 const TimelineData = [
   {
     title: "SMK WIKRAMA BOGOR",

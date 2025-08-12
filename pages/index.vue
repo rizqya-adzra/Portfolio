@@ -2,22 +2,22 @@
   <div>
     <VideoPlay />
 
-    <div class="py-24">
-      <div class="w-[1200px] mx-auto">
-        <h1 class="font-bebas text-[#714AFF] text-9xl">{{ $t('header_1') }}</h1>
-        <div class="grid grid-cols-2 gap-12 items-end mt-12">
-          <div>
+    <div class="py-24 text-center lg:text-start">
+      <div class="max-w-[900px] lg:max-w-[1250px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <h1 class="font-bebas text-[#714AFF] text-7xl md:text-8xl lg:text-9xl">
+          {{ $t('header_1') }}
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-6 sm:mt-12">
+          <div class="order-2 lg:order-1">
             <p class="mb-4 font-inter font-bold text-black dark:text-white">{{ $t('subheader_1') }}</p>
             <p class="font-inter text-gray-700 dark:text-gray-300">{{ $t('description_1') }}</p>
-  
-            <div class="flex gap-5 mt-5">
+            <div class="flex flex-col justify-center sm:flex-row lg:justify-normal gap-5 mt-10">
               <BaseSecondaryButton buttonName="Back end" @click="openPopup('backend')" />
               <BaseSecondaryButton buttonName="Fullstack" @click="openPopup('fullstack')" />
               <BaseSecondaryButton buttonName="Front end" @click="openPopup('frontend')" />
             </div>
           </div>
-  
-          <div>
+          <div class="order-1 lg:order-2 ">
             <BaseImageButtonCard imageSrc="images/bebek.jpeg" description="- Rizqya Adzra Zahira Sudrajat" />
           </div>
         </div>
@@ -25,13 +25,13 @@
     </div>
 
     <div class="bg-[#714AFF] py-24">
-      <div class="w-[1200px] mx-auto">
-        <h1 class="font-bebas text-white text-9xl text-center">{{ $t('header_2') }}</h1>
-        <div class="grid grid-cols-2 gap-12 items-start mt-12">
+      <div class="max-w-[900px] lg:max-w-[1250px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <h1 class="font-bebas text-white text-7xl md:text-8xl lg:text-9xl text-center">{{ $t('header_2') }}</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-start mt-12">
           <div>
-            <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2') }}</p>
+            <p class="mb-4 font-inter font-bold text-white text-center lg:text-start">{{ $t('subheader_2') }}</p>
             <div class="flex flex-col gap-4">
-              <div class="flex gap-3">
+              <div class="flex flex-wrap gap-3 justify-center lg:justify-normal">
                 <BaseTertiaryButton
                   v-for="(btn, index) in allButtons.slice(0, 4)"
                   :key="index"
@@ -41,32 +41,32 @@
                   :isHovered="activeIndex === index"
                 />
               </div>
-              <div class="flex gap-3">
+              <div class="flex flex-wrap gap-3 justify-center lg:justify-normal"> 
                 <BaseTertiaryButton
                   v-for="(btn, index) in allButtons.slice(4, 8)"
-                  :key="index+4"
+                  :key="index + 4"
                   :icon="btn.icon"
                   :tooltip="btn.tooltip"
                   :hoverColor="btn.hoverColor"
-                  :isHovered="activeIndex === (index+4)"
+                  :isHovered="activeIndex === (index + 4)"
                 />
               </div>
             </div>
           </div>
           <div class="text-start">
-            <p class="mb-4 font-inter font-bold text-white">{{ $t('subheader_2.1') }}</p>
+            <p class="mb-4 font-inter font-bold text-white text-center lg:text-start">{{ $t('subheader_2.1') }}</p>
             <div class="flex flex-col gap-4">
-              <div class="flex gap-3 justify-start">
+              <div class="flex flex-wrap gap-3 justify-center lg:justify-normal"> 
                 <BaseTertiaryButton
                   v-for="(btn, index) in allButtons.slice(8, 12)"
-                  :key="index+8"
+                  :key="index + 8"
                   :icon="btn.icon"
                   :tooltip="btn.tooltip"
                   :hoverColor="btn.hoverColor"
-                  :isHovered="activeIndex === (index+8)"
+                  :isHovered="activeIndex === (index + 8)"
                 />
               </div>
-              <p class="font-inter text-gray-300">{{ $t('description_2') }}</p>
+              <p class="font-inter text-gray-300 text-center lg:text-start mt-3">{{ $t('description_2') }}</p>
             </div>
           </div>
         </div>
@@ -74,16 +74,16 @@
     </div>
 
     <div class="py-24">
-      <div class="w-[1200px] mx-auto">
-        <div class="grid grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 class="font-bebas text-[#714AFF] text-9xl">{{ $t('header_3') }}</h1>
+      <div class="max-w-[900px] lg:max-w-[1250px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="flex flex-col items-center lg:items-start text-center lg:text-start">
+            <h1 class="font-bebas text-[#714AFF] text-7xl md:text-8xl lg:text-9xl">{{ $t('header_3') }}</h1>
             <p class="mb-4 font-inter font-bold text-black dark:text-white my-3">{{ $t('subheader_3') }}</p>
-            <BasePrimaryButton buttonName="Git Hub Repository" link='https://github.com/rizqya-adzra?tab=repositories' />
+            <BasePrimaryButton buttonName="Git Hub Repository" link="https://github.com/rizqya-adzra?tab=repositories" />
           </div>
           <div>
-            <BaseVerticalCarousel :items="carouselItems"/>
-            <div class="flex items-center gap-6 text-gray-700 dark:text-gray-300 text-sm font-medium select-none mt-5">
+            <BaseVerticalCarousel :items="carouselItems" />
+            <div class="flex flex-wrap justify-end items-center gap-6 text-gray-700 dark:text-gray-300 text-sm font-medium select-none mt-5">
               <div class="flex items-center gap-2">
                 <span class="rounded-full w-5 h-5 bg-[#E63946] inline-block"></span>
                 Internship
@@ -111,10 +111,10 @@
     </div>
 
     <div class="bg-[#1E1E1E] py-12">
-      <div class="w-[1200px] mx-auto">
-        <div class="flex justify-center gap-24">
+      <div class="max-w-[700px] lg:max-w-[1250px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-center md:text-left">
           <div>
-            <h1 class="font-inter text-white text-4xl font-bold">Interested to Hire Me?</h1>
+            <h1 class="font-inter text-white text-3xl sm:text-4xl font-bold">Interested to Hire Me?</h1>
             <p class="font-inter text-gray-300 mt-2">Please take a look at my CV.</p>
           </div>
           <BaseSpecialButton buttonName="view cv here !" @click="openCvPopup" />
@@ -123,44 +123,47 @@
     </div>
 
     <div class="py-24" style="background: linear-gradient(to bottom, #714AFF, #555555);">
-      <div class="w-[1000px] mx-auto">
-        <h1 class="font-bebas text-white text-9xl text-center mt-7">{{ $t('header_4') }}</h1>
-        <div class="flex items-center mt-12">
+      <div class="max-w-[700px] lg:max-w-[1020px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <h1 class="font-bebas text-white text-7xl md:text-8xl lg:text-9xl text-center mt-7">
+          {{ $t('header_4') }}
+        </h1>
+        <div class="flex flex-col sm:flex-row items-center mt-12 gap-4">
           <textarea
             v-model="message"
-            class="font-inter flex-grow resize-none py-2 rounded-3xl px-6 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-purple-300 bg-[#f7efe7] text-base leading-[64px]"
-            placeholder="Write your thoughts about me here."
             rows="1"
-            style="vertical-align: middle;"
+            class="font-inter flex-grow w-full resize-none py-6 rounded-3xl px-6 text-gray-500 placeholder-gray-400 
+                  focus:outline-none focus:ring-4 focus:ring-purple-300 bg-[#f7efe7] text-base
+                  min-h-[44px]"
+            placeholder="Write your thoughts about me here."
           ></textarea>
-          <button
+          <BaseSecondaryButton  
             @click="sendMessage"
-            :disabled="loading"
-            class="font-bebas ml-4 bg-black text-white rounded-3xl px-6 py-7 text-3xl hover:bg-gray-800 transition-colors disabled:opacity-50"
-          >
-            {{ loading ? 'SENDING...' : 'SEND →' }}
-          </button>
+            :disabled="loading" 
+            :buttonName="loading ? 'SENDING...' : 'SEND →'"
+            class="min-w-[120px] sm:w-auto p-5 sm:p-7 self-center"
+          />
         </div>
         <div>
-          <p class="font-inter text-gray-400 text-end mt-2 ">{{ $t('subheader_4') }}</p>
+          <p class="font-inter text-gray-400 text-center sm:text-end mt-2">
+            {{ $t('subheader_4') }}
+          </p>
         </div>
       </div>
 
-      <BaseAlert 
-        v-if="statusMessage" 
-        :type="statusType" 
-        :message="statusMessage" 
-      />
 
-      <div class="flex gap-3 items-center justify-center mt-20">
-        <p class="font-inter text-white font-bold">Follow me here -></p>
-        <BaseExternalLinkButton icon="uil:linkedin" link="https://www.linkedin.com/in/rizqya-adzra/" />
-        <BaseExternalLinkButton icon="uil:instagram" link="https://instagram.com/rizqya_adzrazs" />
-        <BaseExternalLinkButton icon="uil:twitter" link="https://x.com/luxqya_ra" />
-        <BaseExternalLinkButton icon="uil:github" link="https://github.com/rizqya-adzra" />
+      <BaseAlert v-if="statusMessage" :type="statusType" :message="statusMessage" />
+
+      <div class="flex flex-col gap-4 items-center justify-center mt-20">
+        <p class="font-inter text-white font-bold">Follow Me Here!</p>
+        <div class="flex gap-2">
+          <BaseExternalLinkButton icon="uil:linkedin" link="https://www.linkedin.com/in/rizqya-adzra/" />
+          <BaseExternalLinkButton icon="uil:instagram" link="https://instagram.com/rizqya_adzrazs" />
+          <BaseExternalLinkButton icon="uil:twitter" link="https://x.com/luxqya_ra" />
+          <BaseExternalLinkButton icon="uil:github" link="https://github.com/rizqya-adzra" />
+        </div>
       </div>
     </div>
-    
+
     <BasePopUpCard
       :title="popupData.title"
       :subheader="popupData.subheader"
@@ -183,6 +186,10 @@
 <script setup>
 import { createClient } from '@supabase/supabase-js'
 import { useRuntimeConfig } from '#imports'
+
+useHead({
+  title: 'RA | About Me'
+})
 
 const supabaseUrl = useRuntimeConfig().public.supabaseUrl
 const supabaseKey = useRuntimeConfig().public.supabaseKey

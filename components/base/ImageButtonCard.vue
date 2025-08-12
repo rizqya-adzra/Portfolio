@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm ml-auto"> 
+  <div class="max-w-sm mx-auto lg:ml-auto lg:mx-0">
     <div>
       <img
         v-if="imageSrc"

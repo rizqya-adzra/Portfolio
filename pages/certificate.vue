@@ -1,29 +1,35 @@
 <template>
   <div class="py-16">
-    <div class="w-[1200px] mx-auto">
-      <h1 class="font-bebas text-9xl text-[#714AFF] mb-5">{{ $t('certificate') }}</h1>
+    <div class="max-w-[700px] lg:max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-14">
+      <h1 class="font-bebas text-7xl md:text-8xl lg:text-9xl text-[#714AFF] mb-5">
+        {{ $t('certificate') }}
+      </h1>
 
-      <div class="flex items-end justify-between mb-5 gap-3">
+      <div
+        class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-5 gap-3"
+      >
         <p class="dark:text-gray-300 text-gray-600 font-bold font-inter duration-500">
           Certifications Total: {{ filteredItems.length }}
         </p>
 
-        <div class="flex gap-2">
+        <div class="flex flex-wrap gap-2">
           <BaseDropdown
             v-model="filterCompany"
             :sortOptions="companyOptions"
+            class="min-w-[150px]"
           />
-  
+
           <BaseDropdown
             v-model="sortBy"
             :sortOptions="sortOptions"
+            class="min-w-[150px]"
           />
         </div>
       </div>
 
-      <BaseMasonryGrid 
-        :items="sortedItems" 
-        @clickItem="openPopup" 
+      <BaseMasonryGrid
+        :items="sortedItems"
+        @clickItem="openPopup"
       />
     </div>
   </div>
@@ -46,6 +52,10 @@ const sortBy = ref('')
 const filterCompany = ref('all')
 const IsPopupVisible = ref(false)
 const popupItem = ref(null)
+
+useHead({
+  title: 'RA | Certificate'
+})
 
 const sortOptions = [
   { label: 'Name', value: 'title' },
