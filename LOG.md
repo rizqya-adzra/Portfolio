@@ -76,3 +76,6 @@
 - Menambahkan Responsive di seluruh halaman dan hampir seluruh Component
 - Menambahkan Title di seluruh page
 - Memperbaiki Dark and Light Mode Toggle yang awalnya tidak sinkron dengan pilihan color-mode user, menjadi sinkron dengan menyambungkannya dengan onMounted
+
+[RA] Update 2025-08-17 v1.2.1
+- Menambahkan Data untuk pengalaman dan sertifikat

@@ -3,8 +3,9 @@
     class="font-inter flex items-center py-5 justify-between border-b border-gray-700 
            bg-white dark:bg-black text-black dark:text-white duration-500 px-4 md:px-10"
   >
-    <div>
-      <h1 class="text-2xl font-bold">LOGO.</h1>
+    <div class="flex justify-center items-center">
+      <img src="/favicon.ico" alt="" class="max-w-12">
+      <p class="text-lg font-bold leading-tight text-gray-800 dark:text-gray-400"> Riz . <br>. Qya .</p>
     </div>
     <div class="hidden lg:flex justify-center gap-9 font-bold text-xs">
       <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />

@@ -54,6 +54,9 @@
 ### Feat V1.2.1
 - Added Responsiveness to all pages
 
+### Feat V1.2.1
+- Added Data to be translated for certificate.vue and experience.vue pages
+
 
 
 
