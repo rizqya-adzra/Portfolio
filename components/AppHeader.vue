@@ -11,7 +11,7 @@
       <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />
       <BaseNavigationButton :buttonName="$t('certificate')" @click="navigateTo('/certificate')" link="/certificate" />
       <BaseNavigationButton :buttonName="$t('experience')" @click="navigateTo('/experience')" link="/experience" />
-      <BaseNavigationButton :buttonName="$t('blog')" />
+      <BaseNavigationButton :buttonName="$t('article')" @click="navigateTo('/article')" link="/article" />
     </div>
     <div class="flex gap-6 items-center">
       <div class="flex justify-center items-center cursor-pointer">
@@ -43,7 +43,7 @@
         <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />
         <BaseNavigationButton :buttonName="$t('certificate')" @click="navigateTo('/certificate')" link="/certificate" />
         <BaseNavigationButton :buttonName="$t('experience')" @click="navigateTo('/experience')" link="/experience" />
-        <BaseNavigationButton :buttonName="$t('blog')" />
+        <BaseNavigationButton :buttonName="$t('article')" @click="navigateTo('/article')" link="/article" />
       </div>
     </transition>
   </div>

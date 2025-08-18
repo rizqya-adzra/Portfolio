@@ -40,7 +40,7 @@
 - Added new responsive Scrollbar design
 
 ### Feat V1.1.0
-- Added contents in certificate.vue page
+- 
 - Added MasonryGrid Component
 - Added filter or sort for certificate 
 
@@ -54,8 +54,11 @@
 ### Feat V1.2.1
 - Added Responsiveness to all pages
 
-### Feat V1.2.1
+### Feat V1.2.2
 - Added Data to be translated for certificate.vue and experience.vue pages
+
+### Feat V1.3.0
+- Added contents in certificate.vue page
 
 
 
