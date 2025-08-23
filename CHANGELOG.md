@@ -60,6 +60,9 @@
 ### Feat V1.3.0
 - Added contents in certificate.vue page
 
+### Feat V1.4.0
+- Modified almost all of the designs in index.vue page 
+
 
 
 

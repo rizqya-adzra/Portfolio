@@ -1,28 +1,31 @@
 <template>
-  <button class="font-bebas text-2xl flex p-5 px-8 gap-5 rounded-full bg-white text-[#714AFF] hover:bg-[#714AFF] hover:text-white transition-all duration-500" @click="handleClick">
-    <component :is="icon" class="w-6 h-6" />
+  <button
+    class="font-bebas text-2xl flex items-center py-7 px-24 gap-5 rounded-full 
+           bg-[#714AFF] text-white 
+           dark:bg-white dark:text-[#714AFF] 
+           hover:bg-[#714AFF] hover:text-white 
+           transition-all duration-500"
+    @click="onClick?.()"
+  >
+    <div v-if="icon" class="w-10 h-10 flex items-center justify-center bg-white dark:bg-primary rounded-full">
+      <Icon v-if="icon" :name="icon" class="text-[#714AFF] dark:text-white text-2xl" />
+    </div>
     {{ buttonName }}
   </button>
 </template>
 
-<script>  
-export default {
-  props: {
-    buttonName: {
-      type: String,
-      default: "SPECIAL BOSS"
-    },
-    icon: {
-      type: Object
-    }
+<script setup>
+defineProps({
+  buttonName: {
+    type: String,
+    default: "SPECIAL BOSS"
   },
-  methods: {
-    handleClick() {
-      if(this.onClick) {
-        this.onClick()
-      }
-    }
+  icon: {
+    type: String,
+    default: ""
+  },
+  onClick: {
+    type: Function
   }
-}
+})
 </script>
-

@@ -82,3 +82,6 @@
 
 [RA] Update 2025-08-17 v1.3.0
 - Menambahkan page article.vue
+
+[RA] Update 2025-08-23 v1.4.0
+- Mengubah desain di page index.vue

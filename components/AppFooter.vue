@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="font-inter bg-black py-16 text-center text-sm border-t border-gray-700 text-white">
+  <footer class="font-inter bg-black py-16 text-center text-sm text-white mt-24">
     <div class="flex flex-col gap-3 text-gray-400">
       <div class="flex justify-center items-center">
         <img src="/favicon.ico" alt="" class="max-w-12">

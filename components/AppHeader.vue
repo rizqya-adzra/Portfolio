@@ -1,7 +1,7 @@
 <template>
   <div
-    class="font-inter flex items-center py-5 justify-between border-b border-gray-700 
-           bg-white dark:bg-black text-black dark:text-white duration-500 px-4 md:px-10"
+    class="font-inter flex items-center py-5 justify-between
+           bg-white/80 dark:bg-black/80 backdrop-blur-lg text-black dark:text-white duration-500 px-4 md:px-10"
   >
     <div class="flex justify-center items-center">
       <img src="/favicon.ico" alt="" class="max-w-12">

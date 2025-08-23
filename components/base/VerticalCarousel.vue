@@ -1,7 +1,7 @@
 <template>
   <div
     ref="containerRef"
-    class="font-inter overflow-auto md:overflow-hidden h-[300px] sm:h-[400px] md:h-[450px] rounded-3xl flex flex-col"
+    class="font-inter overflow-auto md:overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] rounded-3xl flex flex-col"
     style="scroll-behavior: auto;"
   >
     <div
@@ -13,14 +13,14 @@
         hoveredIndex === index ? 'bg-gray-200 dark:bg-indigo-900' : ''
       ]"
       @click="openPopup(item)"
-      @mouseenter="() => { hoveredIndex = index; stopAutoScroll() }"
-      @mouseleave="() => { hoveredIndex = null; startAutoScroll() }"
+      @mouseenter="() => { hoveredIndex = index }"
+      @mouseleave="() => { hoveredIndex = null }"
     >
       <div class="flex items-center">
         <img
           :src="item.image"
           alt=""
-          class="w-[120px] sm:w-[140px] md:w-[160px] h-[80px] sm:h-[100px] md:h-[114px] rounded-2xl aspect-[16/9] mr-3 sm:mr-4 object-cover"
+          class="w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] rounded-2xl aspect-[16/9] mr-3 sm:mr-4 object-cover"
         />
         <div class="max-w-[180px] sm:max-w-[220px] md:max-w-[270px]">
           <div class="font-bold dark:text-white text-base sm:text-lg md:text-xl">
@@ -28,24 +28,31 @@
           </div>
           <div
             v-if="item.description"
-            class="text-[10px] sm:text-xs md:text-sm text-gray-600 dark:text-gray-300 line-clamp-2"
+            class="text-[10px] md:text-xs text-gray-600 dark:text-gray-300 line-clamp-2"
           >
             {{ $t(item.description || 'default_description') }}
           </div>
           <div class="flex gap-1 mt-2">
             <div
-              class="py-1 min-w-20 text-center rounded-xl text-xs text-white font-inter font-bold"
-              :style="{ backgroundColor: categoryColors[item.category] || '#999'}"
+              class="py-1 min-w-20 text-center rounded-xl text-xs font-inter font-bold"
+              :style="{
+                border: '2px solid',
+                borderColor: categoryColors[item.category] || '#999',
+                color: categoryColors[item.category] || '#999'
+              }"
             >
               {{ item.category }}
             </div>
-
             <div
-              class="py-1 min-w-20 text-center rounded-xl text-xs text-white font-inter font-bold"
-              :style="{ backgroundColor: statusColors[item.status] || '#666'}"
+              class="py-1 min-w-20 text-center rounded-xl text-xs font-inter font-bold"
+              :style="{
+                border: '2px solid',
+                borderColor: statusColors[item.status] || '#666',
+                color: statusColors[item.status] || '#666'
+              }"
             >
               {{ item.status }}
-            </div>    
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +130,6 @@ const IsPopupVisible = ref(false)
 const popupItem = ref(null)
 
 function openPopup(item) {
-  stopAutoScroll()
   popupItem.value = item
   IsPopupVisible.value = true
 }
@@ -132,8 +138,5 @@ onMounted(() => {
   startAutoScroll()
 })
 
-onBeforeUnmount(() => {
-  stopAutoScroll()
-})
 </script>
 

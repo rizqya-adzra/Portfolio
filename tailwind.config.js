@@ -9,10 +9,15 @@ export default {
         jaro: ["Jaro", "cursive"],
         orelega: ["Orelega One", "cursive"],
       },
+      colors: {
+        primary: "#714AFF",
+        secondary: "#f7f7f7",
+        tertiary: "",
+        dark_secondary: "#2b2b2b",
+        dark_tertiary: "",
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
 

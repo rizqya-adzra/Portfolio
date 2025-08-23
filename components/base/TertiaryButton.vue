@@ -1,10 +1,10 @@
 <template>
   <button
-    class="relative flex p-6 md:p-8 rounded-3xl border-4 transition-all duration-500 ease-in-out group"
+    class="relative dark:text-white text-indigo-950 flex p-6 md:p-8 rounded-3xl border-4 transition-all duration-500 ease-in-out group"
     :style="isHovered ? { color: hoverColor } : {}"
     :class="{
       'bg-white scale-110 shadow-xl brightness-110': isHovered,
-      'hover:bg-white text-indigo-950 hover:scale-110 hover:shadow-xl hover:brightness-110': true
+      'hover:bg-white hover:text-indigo-950 dark:shadow-gray-600 hover:dark:shadow-gray-600 hover:scale-110 hover:shadow-xl hover:brightness-110': true
     }"
     @click="handleClick"
   >
