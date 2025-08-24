@@ -85,3 +85,6 @@
 
 [RA] Update 2025-08-23 v1.4.0
 - Mengubah desain di page index.vue
+
+[RA] Update 2025-08-24 v1.4.1
+- Mengubah desain 

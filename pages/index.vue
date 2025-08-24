@@ -2,7 +2,7 @@
   <div>
     <VideoPlay />
 
-    <div class="py-24 text-center lg:text-start my-10">
+    <div class="py-20 text-center lg:text-start">
       <div class="max-w-[900px] lg:max-w-[1350px] w-full mx-auto px-4 sm:px-6 lg:px-14">
         <h1 class="font-bebas text-primary text-7xl md:text-8xl lg:text-9xl">
           {{ $t('header_1') }}
@@ -24,10 +24,10 @@
       </div>
     </div>
 
-    <div class="py-24 mb-5">
-      <div class="relative max-w-[900px] lg:max-w-[1350px] w-full mx-auto px-4 sm:px-6 lg:px-14 bg-secondary dark:bg-dark_secondary py-12 rounded-3xl">
+    <div class="py-20 mx-auto px-4 sm:px-6 lg:px-14">
+      <div class="relative max-w-[700px] lg:max-w-[1350px] w-full mx-auto px-4 sm:px-6 lg:px-14 py-10 bg-secondary dark:bg-dark_secondary rounded-3xl">
         <div 
-          class="absolute bottom-0 left-0 w-40 h-40 bg-white dark:bg-[#101113] z-20" 
+          class="absolute bottom-0 left-0 w-40 h-40 bg-white dark:bg-[#101113] z-20 hidden lg:block" 
           style="clip-path: polygon(0 100%, 200% 200%, 0 0);">
         </div>
         <h1 class="font-bebas text-primary text-7xl md:text-8xl lg:text-9xl text-center">{{ $t('header_2') }}</h1>
@@ -77,75 +77,98 @@
       </div>
     </div>
 
-    <div class="py-24">
+    <div class="py-20">
+      <div class="max-w-[750px] lg:max-w-[1350px] mx-auto">
+        <h1 class="font-bebas text-7xl md:text-8xl lg:text-9xl text-primary text-center">{{ $t('experience') }}</h1>
+       <div class="flex justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mb-5 px-4 sm:px-6 lg:px-14">
+            <div class="p-10 max-w-[500px] mx-auto bg-secondary dark:bg-dark_secondary rounded-3xl">
+              <div class="flex gap-2 items-center justify-center">
+                <div class="bg-primary rounded-full w-14 h-14 flex items-center justify-center mr-2">
+                  <Icon name="uil:graduation-cap" class="text-white text-4xl" />
+                </div>
+                <p class="font-inter dark:text-white font-bold text-xl text-center">Education</p>
+              </div>
+              <div class="flex gap-10 items-center justify-center md:justify-between mt-7">
+                <div class="flex items-start gap-10">
+                  <div>
+                    <p class="font-inter dark:text-white text-start font-bold">SMK WIKRAMA BOGOR</p>
+                    <p class="font-inter dark:text-tertiary text-start text-xs sm:text-sm">Software Development Major</p>
+                  </div>
+                  <p class="bg-white dark:bg-dark_tertiary dark:text-tertiary p-2 rounded-xl font-bold font-inter text-primary">2023-2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-10 max-w-[500px] mx-auto bg-secondary dark:bg-dark_secondary rounded-3xl">
+              <div class="flex gap-2 items-center justify-center">
+                <div class="bg-primary rounded-full w-14 h-14 flex items-center justify-center mr-2">
+                  <Icon name="uil:briefcase-alt" class="text-white text-4xl" />
+                </div>
+                <p class="font-inter dark:text-white font-bold text-xl text-center">Work Experience</p>
+              </div>
+              <div class="flex gap-10 items-center justify-center md:justify-between mt-7">
+                <div class="flex flex-col gap-5">
+                  <div class="flex items-start gap-10 justify-between">
+                    <div>
+                      <p class="font-inter dark:text-white text-start font-bold">PT. Median Talenta Raya</p>
+                      <p class="font-inter dark:text-tertiary text-start text-xs sm:text-sm">Intern - Back End Developer</p>
+                    </div>
+                    <p class="bg-white dark:bg-dark_tertiary dark:text-tertiary p-2 rounded-xl font-bold font-inter text-primary">2025 Jan-Jun</p>
+                  </div>
+                  <div class="flex items-center gap-10 justify-between">
+                    <div>
+                      <p class="font-inter dark:text-white text-start font-bold">Freelancer</p>
+                      <p class="font-inter dark:text-tertiary text-start text-xs sm:text-sm">Full Stack Developer</p>
+                    </div>
+                    <p class="bg-white dark:bg-dark_tertiary dark:text-tertiary p-2 rounded-xl font-bold font-inter text-primary">2025 - Now</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-5">
+          <BaseSpecialButton 
+            buttonName="View More" 
+            icon="uil:arrow-up-right" 
+            :onClick="() => navigateTo('/experience')" 
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="py-20">
       <div class="max-w-[900px] lg:max-w-[1350px] w-full mx-auto px-4 sm:px-6 lg:px-14">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="flex flex-col items-center lg:items-start text-center lg:text-start">
             <h1 class="font-bebas text-primary text-7xl md:text-8xl lg:text-9xl">{{ $t('header_3') }}</h1>
-            <p class="mb-4 font-inter font-bold text-black dark:text-white my-3 mt-6">{{ $t('subheader_3') }}</p>
-            <BasePrimaryButton buttonName="Git Hub Repository" link="https://github.com/rizqya-adzra?tab=repositories" />
+            <p class="lg:mb-4 font-inter font-bold text-black dark:text-white lg:my-3 mt-6">{{ $t('subheader_3') }}</p>
+            <div class="hidden lg:block">
+              <BasePrimaryButton buttonName="Git Hub Repository" link="https://github.com/rizqya-adzra?tab=repositories" />
+            </div>
           </div>
-          <div>
+          <div class="flex flex-col gap-10 px-4 sm:px-10 lg:px-14">
             <BaseVerticalCarousel :items="carouselItems" />
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="py-24 mb-16">
-      <div class="max-w-[700px] lg:max-w-[1350px] mx-auto">
-        <h1 class="font-bebas text-9xl text-primary text-center">{{ $t('experience') }}</h1>
-        <div class="flex gap-5 items-center justify-evenly mt-10">
-          <div class="p-10 bg-secondary dark:bg-dark_secondary rounded-3xl">
-            <div class="flex gap-2 items-center justify-center">
-              <div class="bg-primary rounded-full w-14 h-14 flex items-center justify-center mr-2">
-                <Icon name="uil:graduation-cap" class="text-white text-4xl" />
-              </div>
-              <p class="text-inter font-bold text-xl text-center">Education</p>
+            <div class="block lg:hidden">
+              <BasePrimaryButton buttonName="Git Hub Repository" link="https://github.com/rizqya-adzra?tab=repositories" />
             </div>
-            <div class="flex gap-10 items-center justify-between mt-7">
-              <div>
-                <p class="font-inter text-start font-semibold">SMK WIKRAMA BOGOR</p>
-                <p class="font-inter text-start text-sm">Software Development Major</p>
-              </div>
-              <div>
-                <p class="bg-white p-2 rounded-xl font-bold font-inter text-primary">2023-2026</p>
-              </div>
-            </div>
-          </div>
-          <div class="p-10 bg-secondary dark:bg-dark_secondary rounded-3xl">
-            <div class="flex gap-2 items-center justify-center">
-              <div class="bg-primary rounded-full w-14 h-14 flex items-center justify-center mr-2">
-                <Icon name="uil:briefcase-alt" class="text-white text-4xl" />
-              </div>
-              <p class="text-inter font-bold text-xl text-center">Work Experience</p>
-            </div>
-            <div class="flex gap-10 items-center justify-between mt-7">
-              <div>
-                <p class="font-inter text-start font-semibold">PT. Median Talenta Raya</p>
-                <p class="font-inter text-start text-sm">Intern - Back End Developer</p>
-              </div>
-              <div>
-                <p class="bg-white p-2 rounded-xl font-bold font-inter text-primary">2025 Jan-Jun</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <BaseSpecialButton buttonName="View More" icon="uil:arrow-up-right" :onClick="() => navigateTo('/experience')" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="py-12 duration-500 px-4 sm:px-6 lg:px-14 mb-16">
+    <div class="py-16 duration-500 px-4 sm:px-6 lg:px-14">
       <div class="relative max-w-[700px] lg:max-w-[1350px] bg-secondary dark:bg-dark_secondary rounded-3xl py-16 w-full mx-auto px-4 sm:px-6 lg:px-14">
+        <div 
+          class="absolute bottom-0 left-0 w-40 h-40 bg-white dark:bg-[#101113] z-20 hidden md:block" 
+          style="clip-path: polygon(0 100%, 200% 200%, 0 0);">
+        </div>
         <div
-          class="absolute top-0 right-0 w-40 h-40 bg-white dark:bg-[#101113] z-20 duration-500"
+          class="absolute top-0 right-0 w-40 h-40 bg-white dark:bg-[#101113] z-20 duration-500 hidden lg:block"
           style="clip-path: polygon(0 100%, 100% 100%, 0 0);">
         </div>
-
         <div class="grid grid-cols-1 lg:grid-cols-2">
-          <div>
+          <div class="text-center lg:text-start">
             <h1 class="font-bebas dark:text-white text-7xl md:text-8xl lg:text-9xl">
               Interested to Hire Me?
             </h1>
@@ -153,7 +176,7 @@
               Please take a look at my CV.
             </p>
           </div>
-           <div class="flex justify-center items-center ">
+           <div class="flex justify-center items-center lg:mt-2 mt-10">
             <BaseSpecialButton
               buttonName="view cv here !"
               @click="openCvPopup"
@@ -163,7 +186,7 @@
       </div>
     </div>
 
-    <div class="py-24">
+    <div class="py-20">
       <div class="max-w-[700px] lg:max-w-[1020px] w-full mx-auto px-4 sm:px-6 lg:px-14">
         <h1 class="font-bebas text-primary text-7xl md:text-8xl lg:text-9xl text-center">
           {{ $t('header_4') }}

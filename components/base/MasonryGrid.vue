@@ -8,7 +8,7 @@
     <div
       v-for="item in items"
       :key="item.id"
-      class="masonry-item bg-gray-100 hover:bg-gray-200 dark:hover:bg-indigo-900 dark:bg-[#2b2b2b] rounded-3xl cursor-pointer overflow-hidden duration-500 mb-3 break-inside-avoid"
+      class="masonry-item bg-secondary hover:bg-tertiary dark:hover:bg-dark_tertiary dark:bg-dark_secondary rounded-3xl cursor-pointer overflow-hidden duration-500 mb-3 break-inside-avoid"
       @click="emit('clickItem', item)"
     >
       <img

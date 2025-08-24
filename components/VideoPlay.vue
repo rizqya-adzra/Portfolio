@@ -2,7 +2,7 @@
   <div class="relative w-full overflow-hidden bg-black mx-w-full mx-auto">
     
     <div 
-      class="absolute bottom-0 left-0 w-40 h-40 bg-white dark:bg-[#101113] z-20" 
+      class="absolute bottom-0 left-0 w-40 h-40 bg-white dark:bg-[#101113] z-20 hidden md:block" 
       style="clip-path: polygon(0 100%, 200% 200%, 0 0);">
     </div>
 

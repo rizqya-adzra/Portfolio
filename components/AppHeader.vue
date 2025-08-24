@@ -1,7 +1,7 @@
 <template>
   <div
     class="font-inter flex items-center py-5 justify-between
-           bg-white/80 dark:bg-black/80 backdrop-blur-lg text-black dark:text-white duration-500 px-4 md:px-10"
+           bg-white/80 dark:bg-[#0d1118]/80 backdrop-blur-lg text-black dark:text-white duration-500 px-4 md:px-10"
   >
     <div class="flex justify-center items-center">
       <img src="/favicon.ico" alt="" class="max-w-12">
@@ -16,16 +16,11 @@
     <div class="flex gap-6 items-center">
       <div class="flex justify-center items-center cursor-pointer">
         <div
-          class="relative rounded-full w-14 h-7 transition duration-200 ease-linear hover:opacity-90"
-          :class="isDark ? 'bg-indigo-600' : 'bg-yellow-500'"
+          class="relative rounded-full w-10 h-10 flex items-center justify-center cursor-pointer transition duration-500 hover:opacity-90"
+          :class="isDark ? 'bg-dark_secondary text-white hover:bg-dark_tertiary' : 'bg-secondary text-black hover:bg-tertiary'"
           @click="toggle"
         >
-          <div
-            class="absolute top-1 left-1 w-5 h-5 flex items-center justify-center rounded-full bg-white transition-all duration-200 ease-linear"
-            :class="isDark ? 'translate-x-7' : 'translate-x-0'"
-          >
-            <Icon :name="isDark ? 'uil:moon' : 'uil:sun'" class="w-4 h-4 text-black" />
-          </div>
+          <Icon :name="isDark ? 'uil:moon' : 'uil:sun'" class="w-6 h-6" />
         </div>
       </div>
       <LanguageSwitcher />
@@ -38,7 +33,7 @@
     <transition name="fade">
       <div
         v-if="isOpen"
-        class="absolute top-[64px] left-0 w-full bg-white dark:bg-black border-t border-gray-700 flex flex-col items-center py-6 space-y-6 lg:hidden"
+        class="absolute top-[74px] left-0 w-full bg-white dark:bg-black border-t border-gray-700 flex flex-col items-center py-6 space-y-6 lg:hidden"
       >
         <BaseNavigationButton :buttonName="$t('about_me')" @click="navigateTo('/')" link="/" />
         <BaseNavigationButton :buttonName="$t('certificate')" @click="navigateTo('/certificate')" link="/certificate" />

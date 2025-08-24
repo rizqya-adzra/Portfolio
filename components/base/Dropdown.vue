@@ -30,7 +30,7 @@ const changeSort = (value) => {
   <div class="relative inline-block text-left">
     <button
       @click="isOpen = !isOpen"
-      class="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-[#2b2b2b] text-black dark:text-white rounded-full hover:opacity-90 focus:outline-none transition duration-500"
+      class="flex items-center gap-2 px-3 py-2 hover:bg-tertiary dark:hover:bg-dark_tertiary bg-secondary dark:bg-dark_secondary text-black dark:text-white rounded-full hover:opacity-90 focus:outline-none transition duration-500"
     >
       <Icon name="mdi:sort" class="text-xl" />
       <span class="text-sm font-bold">
@@ -41,7 +41,7 @@ const changeSort = (value) => {
 
     <div
       v-if="isOpen"
-      class="absolute right-0 mt-2 w-40 bg-gray-200 text-black dark:bg-[#2b2b2b] dark:text-white rounded-md shadow-lg z-50"
+      class="absolute right-0 mt-2 w-40 bg-gray-200 text-black dark:bg-dark_secondary dark:text-white rounded-md shadow-lg z-50"
     >
       <ul class="py-1 text-sm">
         <li

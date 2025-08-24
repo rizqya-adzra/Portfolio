@@ -10,7 +10,7 @@
       class="flex items-center justify-between rounded-2xl my-2 p-2 sm:p-3 md:p-4 min-h-[110px] sm:min-h-[120px] md:min-h-[130px] cursor-pointer duration-500"
       :class="[
         'bg-[#f7f7f7] dark:bg-[#2b2b2b]',
-        hoveredIndex === index ? 'bg-gray-200 dark:bg-indigo-900' : ''
+        hoveredIndex === index ? 'bg-secondary dark:bg-dark_tertiary' : ''
       ]"
       @click="openPopup(item)"
       @mouseenter="() => { hoveredIndex = index }"
@@ -32,7 +32,7 @@
           >
             {{ $t(item.description || 'default_description') }}
           </div>
-          <div class="flex gap-1 mt-2">
+          <!-- <div class="flex gap-1 mt-2">
             <div
               class="py-1 min-w-20 text-center rounded-xl text-xs font-inter font-bold"
               :style="{
@@ -53,7 +53,7 @@
             >
               {{ item.status }}
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ const SCROLL_INTERVAL = 30
 const categoryColors = {
   internship: '#E63946',
   school: '#6A4C93',
-  personal: '#1D3557'
+  personal: '#0046FF'
 }
 
 const statusColors = {

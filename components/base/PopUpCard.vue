@@ -24,7 +24,7 @@
         <div class="flex-1 overflow-y-auto pr-2 sm:pr-4">
           <div>
             <h1
-              class="font-bebas text-6xl sm:text-7xl md:text-8xl tracking-tight sm:tracking-normal text-[#714AFF] leading-none break-words"
+              class="font-bebas text-6xl sm:text-7xl md:text-8xl tracking-tight sm:tracking-normal text-primary leading-none break-words"
             >
               {{ title }}
             </h1>

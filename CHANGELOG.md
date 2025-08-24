@@ -63,6 +63,10 @@
 ### Feat V1.4.0
 - Modified almost all of the designs in index.vue page 
 
+### Feat V1.4.1
+- Modified almost all of the designs 
+- Added Primary, Secondary, and Tertiary colors in tailwind.config.js
+
 
 
 

@@ -2,7 +2,7 @@
   <div>
     <div class="py-16">
       <div class="max-w-[700px] lg:max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-14">
-        <h1 class="font-bebas text-7xl md:text-8xl lg:text-9xl text-[#714AFF] mb-7 text-center sm:text-start">
+        <h1 class="font-bebas text-7xl md:text-8xl lg:text-9xl text-primary mb-7 text-center sm:text-start">
           {{ $t('article') }}
         </h1>
         <BaseCard :items="links" />

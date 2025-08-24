@@ -1,8 +1,6 @@
-<script setup lang="ts"></script>
-
 <template>
-  <footer class="font-inter bg-black py-16 text-center text-sm text-white mt-24">
-    <div class="flex flex-col gap-3 text-gray-400">
+  <footer class="font-inter dark:bg-[#0d1118] py-16 text-center text-sm text-white mt-24 border-t-2 border-gray-700 border-dashed">
+    <div class="flex flex-col gap-3 text-black dark:text-gray-400">
       <div class="flex justify-center items-center">
         <img src="/favicon.ico" alt="" class="max-w-12">
         <p class="text-lg font-bold leading-tight">RIZQYA <br> ADZRA.</p>
@@ -15,5 +13,3 @@
     </div>
   </footer>
 </template>
-
-<style scoped></style>

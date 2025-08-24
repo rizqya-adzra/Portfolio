@@ -24,7 +24,7 @@
         <div class="flex-1 overflow-y-auto pr-2 sm:pr-4">
           <div>
             <h1
-              class="font-bebas text-6xl sm:text-7xl md:text-8xl tracking-tight sm:tracking-normal text-[#714AFF] leading-none break-words"
+              class="font-bebas text-6xl sm:text-7xl md:text-8xl tracking-tight sm:tracking-normal text-primary leading-none break-words"
             >
               {{ title }}
             </h1>
@@ -83,7 +83,7 @@
           </h3>
           <div class="mt-2 flex flex-wrap gap-2">
             <div
-              class="p-2 min-w-[80px] text-center rounded-3xl text-xs sm:text-sm text-white bg-[#714AFF] font-inter font-bold"
+              class="p-2 min-w-[80px] text-center rounded-3xl text-xs sm:text-sm text-white bg-primary font-inter font-bold"
               v-if="datetime"
             >
               {{ datetime }}

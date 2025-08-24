@@ -1,6 +1,6 @@
 <template>
   <button
-    class="relative dark:text-white text-indigo-950 flex p-6 md:p-8 rounded-3xl border-4 transition-all duration-500 ease-in-out group"
+    class="relative dark:text-white text-indigo-950 flex p-4 md:p-8 rounded-3xl border-4 transition-all duration-500 ease-in-out group"
     :style="isHovered ? { color: hoverColor } : {}"
     :class="{
       'bg-white scale-110 shadow-xl brightness-110': isHovered,
@@ -15,7 +15,7 @@
 
     <span
       v-if="tooltip"
-      class="absolute bottom-[90px] sm:bottom-[100px] md:bottom-[105px] mb-2 left-1/2 font-inter font-bold -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-2 px-3 sm:py-3 sm:px-5 text-[10px] sm:text-xs text-white opacity-0 transition-opacity duration-300 pointer-events-none"
+      class="absolute bottom-[65px] sm:bottom-[100px] md:bottom-[105px] mb-2 left-1/2 font-inter font-bold -translate-x-1/2 whitespace-nowrap rounded bg-[#101113] py-2 px-3 sm:py-3 sm:px-5 text-[10px] sm:text-xs text-white opacity-0 transition-opacity duration-300 pointer-events-none"
       :class="{
         'opacity-100': isHovered,
         'group-hover:opacity-100': true

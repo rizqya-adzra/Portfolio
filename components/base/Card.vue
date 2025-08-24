@@ -16,7 +16,7 @@
 
         <div class="mt-3 py-4 ">
           <div class="text-xs uppercase flex justify-start gap-2 duration-500">
-            <span class="font-inter text-[#714AFF] font-bold duration-500">{{ item.category }}</span>
+            <span class="font-inter text-primary font-bold duration-500">{{ item.category }}</span>
             <span class="font-inter dark:text-white duration-500">|</span>
             <span class="font-inter font-bold dark:text-white duration-500">{{ item.date }}</span>
           </div>
