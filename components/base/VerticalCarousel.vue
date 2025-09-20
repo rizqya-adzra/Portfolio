@@ -16,12 +16,21 @@
       @mouseenter="() => { hoveredIndex = index }"
       @mouseleave="() => { hoveredIndex = null }"
     >
-      <div class="flex items-center">
+      <div class="flex items-center relative">
+        <div
+          v-if="!loadedImages[index]"
+          class="absolute left-0 w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-gray-800"
+        >
+          <LoadingWaveSpinner />
+        </div>
+
         <img
           :src="item.image"
           alt=""
           class="w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] rounded-2xl aspect-[16/9] mr-3 sm:mr-4 object-cover"
+          @load="loadedImages[index] = true"
         />
+
         <div class="max-w-[180px] sm:max-w-[220px] md:max-w-[270px]">
           <div class="font-bold dark:text-white text-base sm:text-lg md:text-xl">
             {{ item.title }}
@@ -32,53 +41,33 @@
           >
             {{ $t(item.description || 'default_description') }}
           </div>
-          <!-- <div class="flex gap-1 mt-2">
-            <div
-              class="py-1 min-w-20 text-center rounded-xl text-xs font-inter font-bold"
-              :style="{
-                border: '2px solid',
-                borderColor: categoryColors[item.category] || '#999',
-                color: categoryColors[item.category] || '#999'
-              }"
-            >
-              {{ item.category }}
-            </div>
-            <div
-              class="py-1 min-w-20 text-center rounded-xl text-xs font-inter font-bold"
-              :style="{
-                border: '2px solid',
-                borderColor: statusColors[item.status] || '#666',
-                color: statusColors[item.status] || '#666'
-              }"
-            >
-              {{ item.status }}
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
   </div>
 
-  <BasePopUpCardDetailed
-    :visible="IsPopupVisible"
-    :title="popupItem?.title || ''"
-    :subheader="popupItem?.subheader || ''"
-    :description="$t(popupItem?.description || 'default_description')"
-    :image="popupItem?.image || ''"
-    :github="popupItem?.github || ''"
-    :link="popupItem?.link || ''"
-    :datetime="popupItem?.datetime || ''"
-    :category="popupItem?.category"
-    :status="popupItem?.status"
-    :category-colors="categoryColors"
-    :status-colors="statusColors"
-    @close="IsPopupVisible = false"
-  />
+  <teleport to="body">
+    <BasePopUpCardDetailed
+      :visible="IsPopupVisible"
+      :title="popupItem?.title || ''"
+      :subheader="popupItem?.subheader || ''"
+      :description="$t(popupItem?.description || 'default_description')"
+      :image="popupItem?.image || ''"
+      :github="popupItem?.github || ''"
+      :link="popupItem?.link || ''"
+      :datetime="popupItem?.datetime || ''"
+      :category="popupItem?.category"
+      :status="popupItem?.status"
+      :category-colors="categoryColors"
+      :status-colors="statusColors"
+      @close="IsPopupVisible = false"
+    />
+  </teleport>
 </template>
 
-
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted } from 'vue'
+import LoadingWaveSpinner from '@/components/LoadingWaveSpinner.vue'
 
 const props = defineProps({
   items: Array
@@ -101,6 +90,7 @@ const statusColors = {
 }
 
 const hoveredIndex = ref(null)
+const loadedImages = ref([]) 
 
 function scrollStep() {
   if (!containerRef.value) return
@@ -119,13 +109,6 @@ function startAutoScroll() {
   }
 }
 
-function stopAutoScroll() {
-  if (scrollTimeout) {
-    clearTimeout(scrollTimeout)
-    scrollTimeout = null
-  }
-}
-
 const IsPopupVisible = ref(false)
 const popupItem = ref(null)
 
@@ -135,8 +118,7 @@ function openPopup(item) {
 }
 
 onMounted(() => {
+  loadedImages.value = new Array(props.items.length * 2).fill(false)
   startAutoScroll()
 })
-
 </script>
-

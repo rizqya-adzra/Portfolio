@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/icon',
     '@nuxtjs/google-fonts',
+    '@hypernym/nuxt-gsap',
   ],
 
   css: [

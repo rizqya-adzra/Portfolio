@@ -50,9 +50,8 @@ const TimelineData = [
   {
     title: "FREELANCER",
     subtitle: "Part Time Job",
-    date_1: "2025 January - June",
-    description_1: "experience_mtr_2025",
-    image_1: "images/certificates/Sertifikasi Rizqya.jpg"
+    date_1: "2025 - Now",
+    description_1: "experience_freelancer_2025",
   },
 ];
 </script>

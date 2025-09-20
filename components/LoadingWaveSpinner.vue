@@ -1,0 +1,50 @@
+<template>
+  <div class="flex flex-col items-center space-y-4">
+    <div class="wave-container">
+      <div class="wave-bar bg-primary"></div>
+      <div class="wave-bar bg-primary"></div>
+      <div class="wave-bar bg-primary"></div>
+      <div class="wave-bar bg-primary"></div>
+      <div class="wave-bar bg-primary"></div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.wave-container {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  height: 2rem;
+}
+
+.wave-bar {
+  width: 0.25rem;
+  height: 100%;
+  animation: wave 1.2s ease-in-out infinite;
+}
+
+.wave-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave-bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+</style>

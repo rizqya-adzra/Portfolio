@@ -1,13 +1,13 @@
 <template>
   <div
     v-if="visible"
-    class="fixed inset-0 flex items-center overflow-hidden justify-center bg-black/40 dark:bg-gray-600/30 z-50 backdrop-blur"
+    class="fixed inset-0 flex items-center overflow-hidden justify-center bg-black/40 dark:bg-gray-600/30 z-[999] backdrop-blur"
   ></div>
 
   <transition name="fade-scale">
     <div
       v-if="visible"
-      class="fixed inset-0 flex items-center justify-center z-50 px-4 sm:px-6"
+      class="fixed inset-0 flex items-center justify-center z-[9999] px-4 sm:px-6"
     >
       <div
         class="relative shadow-2xl bg-white dark:bg-[#101113] w-[800px] max-h-[70vh] sm:max-h-[85vh] rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col z-10 overflow-hidden"
@@ -37,23 +37,9 @@
           </div>
 
           <div class="mt-4 sm:mt-6">
-            <img
-              v-if="image"
-              :src="image"
-              alt="Popup image"
-              class="w-full h-full object-cover rounded-xl mb-3"
-            />
-            <img
-              v-if="image_2"
-              :src="image_2"
-              alt="Popup image"
-              class="w-full h-full object-cover rounded-xl mb-3"
-            />
-            <img
-              v-if="image_3"
-              :src="image_3"
-              alt="Popup image"
-              class="w-full h-full object-cover rounded-xl mb-3"
+            <BaseImagePreview 
+              :images="[image, image_2, image_3].filter(img => img && img.trim() !== '')" 
+              alt="Popup images" 
             />
             <p
               class="font-inter text-gray-700 dark:text-gray-300 mt-1 text-xs sm:text-sm text-end mr-3"

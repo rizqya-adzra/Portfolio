@@ -126,6 +126,22 @@ const dataItems = [
     description: 'front_end_description',
   },
   {
+    id: 5,
+    image: '/images/certificates/Screenshot 2025-09-17 085203.png',
+    company: 'REDY',
+    datetime: '12/2024 - 12/2027',
+    title: 'IGDX Career Seminar',
+    description: 'front_end_description',
+  },
+  {
+    id: 5,
+    image: '/images/certificates/belajar-dasar.png',
+    company: 'Dicoding',
+    datetime: '12/2024 - 12/2027',
+    title: 'Belajar Dasar Pemrograman Web',
+    description: 'front_end_description',
+  },
+  {
     id: 6,
     image: '/images/certificates/c.png',
     image_2: '/images/certificates/c_2.png',
