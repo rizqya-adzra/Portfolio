@@ -9,7 +9,7 @@
       :key="index"
       class="flex items-center justify-between rounded-2xl my-2 p-2 sm:p-3 md:p-4 min-h-[110px] sm:min-h-[120px] md:min-h-[130px] cursor-pointer duration-500"
       :class="[
-        'bg-[#f7f7f7] dark:bg-[#2b2b2b]',
+        'bg-[#f7f7f7] dark:bg-dark_secondary',
         hoveredIndex === index ? 'bg-secondary dark:bg-dark_tertiary' : ''
       ]"
       @click="openPopup(item)"
@@ -18,17 +18,17 @@
     >
       <div class="flex items-center relative">
         <div
-          v-if="!loadedImages[index]"
-          class="absolute left-0 w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-gray-800"
+          v-if="!item.image"
+          class="absolute left-0 w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] flex items-center justify-center rounded-2xl bg-gray-100 dark:bg-dark_tertiary"
         >
-          <LoadingWaveSpinner />
+          <span class="text-xs text-gray-400">No Image</span>
         </div>
 
         <img
+          v-if="item.image"
           :src="item.image"
           alt=""
           class="w-[120px] sm:w-[180px] md:w-[200px] h-[80px] sm:h-[100px] md:h-[114px] rounded-2xl aspect-[16/9] mr-3 sm:mr-4 object-cover"
-          @load="loadedImages[index] = true"
         />
 
         <div class="max-w-[180px] sm:max-w-[220px] md:max-w-[270px]">
@@ -67,7 +67,6 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import LoadingWaveSpinner from '@/components/LoadingWaveSpinner.vue'
 
 const props = defineProps({
   items: Array
@@ -90,7 +89,6 @@ const statusColors = {
 }
 
 const hoveredIndex = ref(null)
-const loadedImages = ref([]) 
 
 function scrollStep() {
   if (!containerRef.value) return
@@ -118,7 +116,6 @@ function openPopup(item) {
 }
 
 onMounted(() => {
-  loadedImages.value = new Array(props.items.length * 2).fill(false)
   startAutoScroll()
 })
 </script>

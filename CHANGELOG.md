@@ -67,9 +67,9 @@
 - Modified almost all of the designs 
 - Added Primary, Secondary, and Tertiary colors in tailwind.config.js
 
+### Feat V1.4.2
+- Added GSAP and Animation to index.vue
 
-
-
-
-
-
+### Feat V1.4.3
+- Balanced the width 
+- Fixed some Issues

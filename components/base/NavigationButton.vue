@@ -2,7 +2,7 @@
   <button
     @click="navigateTo(link)"
     :class="[
-      'relative p-4 transition-all rounded after:absolute after:left-0 after:bottom-0 after:h-[6px] after:rounded-lg after:transition-all duration-500',
+      'relative p-4 text-sm transition-all rounded after:absolute after:left-0 after:bottom-2 after:h-[6px] after:rounded-lg after:transition-all duration-500',
       route.path === link
         ? 'after:w-full after:bg-primary'
         : 'after:w-0 after:bg-primary hover:after:w-full'
