@@ -265,7 +265,7 @@ const isPopupVisible = ref(false)
 const cvPopup = ref({
   title: 'rizqya’s CV',
   subheader: 'CURRICULUM VITAE',
-  image: '/images/cv.jpg' 
+  image: '/images/rizqya_cv.jpg' 
 })
 
 function openCvPopup() {
@@ -308,9 +308,9 @@ function openPopup(type) {
 
 const carouselItems = [
   {
-    title: 'COMMUNITY APP',
+    title: 'Community App',
     subheader: 'WEBSITE APPLICATIONS',
-    description: 'notes_app_description',
+    description: 'community_app_description',
     image: 'images/projects/community.png',
     github: 'https://github.com/rizqya-adzra/KomunitasApp-API-Django',
     datetime: '14 January - March 2025',
@@ -318,7 +318,7 @@ const carouselItems = [
     status: 'completed'
   },
   {
-    title: 'REKAP KETERLAMBATAN',
+    title: 'Rekap Keterlambatan',
     subheader: 'WEBSITE APPLICATIONS',
     description: 'keterlambatan_app_description',
     image: 'images/projects/RekapKeterlambatan.png',
@@ -328,7 +328,38 @@ const carouselItems = [
     status: 'completed'
   },
   {
-    title: 'PENGADUAN MASYARAKAT',
+    title: 'Flight Booking Design',
+    subheader: 'UI/UX Design',
+    description: 'flight_design_description',
+    image: 'images/projects/FlightBooking.png',
+    datetime: '1 Februari 2025',
+    link: 'https://www.figma.com/design/D3lO1PSAbFmmEyJrOjpDGR/Flight-Booking-App?node-id=35-961&p=f&t=mbkP1QDsKgO5jxyJ-0',
+    category: 'personal',
+    status: 'ongoing'
+  },
+  {
+    title: 'Portfolio',
+    subheader: 'WEBSITE APPLICATIONS',
+    description: 'portfolio_app_description',
+    image: 'images/projects/portofolio.png',
+    github: 'https://github.com/rizqya-adzra/Portfolio',
+    link: 'https://rizqya-portfolio.vercel.app/',
+    datetime: '7 Agustus - 15 Agustus 2025',
+    category: 'personal',
+    status: 'completed'
+  },
+  {
+    title: 'Robaloxs Design',
+    subheader: 'UI/UX Design',
+    description: 'robaloxs_design_description',
+    image: 'images/projects/Robaloxs.png',
+    link: 'https://www.figma.com/design/YrvkCwbDUkhsLMnLP9tyYB/Robaloxs?node-id=0-1&p=f&t=sFNaTOU9znxnwQO2-0',
+    datetime: '20 September 2025',
+    category: 'personal',
+    status: 'ongoing'
+  },
+  {
+    title: 'Pengaduan Masyarakat',
     subheader: 'WEBSITE APPLICATIONS',
     description: 'pengaduan_masyarakat_app_description',
     image: 'images/projects/Pengaduan.png',
@@ -337,37 +368,6 @@ const carouselItems = [
     category: 'internship',
     status: 'completed'
   },
-  {
-    title: 'BOOKS HOUSE',
-    subheader: 'WEBSITE APPLICATIONS',
-    description: 'books_app_description',
-    image: 'images/projects/LandingpagePelanggan.png',
-    github: 'https://github.com/rizqya-adzra/BookApp-Laravel',
-    datetime: '17 October - 13 November 2024',
-    category: 'school',
-    status: 'completed'
-  },
-  {
-    title: 'PORTFOLIO',
-    subheader: 'WEBSITE APPLICATIONS',
-    description: 'portfolio_app_description',
-    image: 'images/projects/Portfolio.png',
-    github: 'https://github.com/rizqya-adzra/Portfolio',
-    link: 'https://rizqya-portfolio.vercel.app/',
-    datetime: '7 Agustus - 15 Agustus 2025',
-    category: 'personal',
-    status: 'ongoing'
-  },
-  {
-    title: 'NOTES APP',
-    subheader: 'WEBSITE APPLICATIONS',
-    description: 'notes_app_description',
-    image: 'images/projects/NotesApp.png',
-    github: 'https://github.com/rizqya-adzra/NotesApp-ReactJs',
-    datetime: '8 December 2024',
-    category: 'personal',
-    status: 'completed'
-  }
 ]
 
 const message = ref('')

@@ -73,3 +73,10 @@
 ### Feat V1.4.3
 - Balanced the width 
 - Fixed some Issues
+
+## Released
+
+### Feat V1.4.4
+- Added paragraphs to be translated in de.json, en.json, dan id.json 
+- Changed Images
+- Fixed the background color of Language Switch Button in dark mode

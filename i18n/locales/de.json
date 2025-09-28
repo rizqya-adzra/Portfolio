@@ -27,11 +27,13 @@
     "card_works": "Funktionsweise",
     "card_other_links": "Andere Links",
 
-    "notes_app_description": "Eine vielseitige Notizen-App, die Ihnen hilft, Ideen festzuhalten, Aufgabenlisten zu organisieren oder wichtige Dinge einfach und schnell zu notieren.",
+    "robaloxs_design_description": "Robaloxs - Eine Robux-Aufladeanwendung mit modernem und benutzerfreundlichem Design. Entwickelt für Desktop- und Mobilansichten mit wiederverwendbaren Komponenten.",
+    "flight_design_description": "Ein Design für eine Flugticketbuchungsanwendung im minimalistischen, modernen Stil, das die Detailgenauigkeit der Komponenten bewahrt und wiederverwendbare Komponenten für Desktop- und Mobilansichten verwendet.",
     "pengaduan_masyarakat_app_description": "Eine Website für indonesische Bürger, um Beschwerden über lokale Probleme einzureichen, sei es im Zusammenhang mit Kriminalität, sozialen Angelegenheiten oder Entwicklung.",
     "books_app_description": "Bookhouse ist eine Online-Plattform, die eine große Auswahl an Büchern anbietet, um Ihren Lese- und Bildungsbedarf zu decken. Mit einer benutzerfreundlichen Oberfläche macht Bookhouse es Ihnen leicht, Ihre Lieblingsbücher aus verschiedenen Genres und von renommierten Autoren zu finden und zu kaufen.",
     "keterlambatan_app_description": "Diese Anwendung erleichtert die Echtzeitverwaltung von Schüler-Verspätungsdaten für Schuladministratoren und Schülerberater. Durch ein automatisiertes Erfassungssystem wird die Verwaltung effizienter gestaltet und anpassbare Berichte für bestimmte Zeiträume bereitgestellt. Die benutzerfreundliche und responsive Oberfläche ermöglicht einen einfachen Zugriff auf verschiedenen Geräten. Zu den Hauptfunktionen gehören die Echtzeit-Erfassung von Verspätungen, zeitbasierte Filter zur Datenanalyse sowie ein interaktives Dashboard, das Statistiken auf intuitive Weise darstellt. Die verwendete Technologie umfasst Laravel 10 für das Backend sowie HTML, CSS, Bootstrap und JavaScript für das Frontend.",
     "portfolio_app_description": "Eine auf Nuxt.js basierende Website, die erstellt wurde, um das Portfolio von Rizqya zu präsentieren. Sie enthält persönliche Informationen, wettbewerbsfähige Fähigkeiten, moderne und trendgerechte Projekte, Zertifikate als Nachweis der Kompetenz, Zusammenfassungen der Erfahrung und mehr.",
+    "community_app_description": "Eine Website, die speziell für wachsende Mikro-/Kleingemeinschaften in Indonesien erstellt wurde, auf der Benutzer Communities erstellen, Erfahrungen mit anderen Mitgliedern teilen, Beiträge verfassen, interagieren und vieles mehr - alles auf einer einzigen Plattform.",
 
     "header_4": "SCHICK MIR ALLES!",
     "subheader_4": "schreib bitte nichts komisches, danke!",

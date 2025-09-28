@@ -27,11 +27,13 @@
     "card_works": "Works",
     "card_other_links": "Other Links",
 
-    "notes_app_description": "A versatile note-taking application designed to help you capture ideas, organize to-do lists, or jot down important things easily and quickly.",
+    "robaloxs_design_description": "Robaloxs - A Robux top-up application with a modern and user-friendly design. Built for both desktop and mobile displays with reusable components.",
+    "flight_design_description": "An airline ticket booking application design with a minimalist-modern style that maintains detailed components and uses reusable components for both desktop and mobile displays.",
     "pengaduan_masyarakat_app_description": "A website for Indonesian citizens to submit complaints about local issues, whether related to crime, social matters, or development.",
     "books_app_description": "Bookhouse is an online platform that offers a wide variety of books to meet your literacy needs. With a user-friendly interface, Bookhouse makes it easy for you to find and purchase your favorite books from various genres and renowned authors.",
     "keterlambatan_app_description": "This application simplifies the real-time management of student tardiness data for School Administrators and Student Advisors. With an automated recording system, it enhances administrative efficiency and offers customizable reports based on specific time periods. The user-friendly and responsive interface ensures easy access across various devices. Key features include real-time tardiness recording, time-based filters for data analysis, and an interactive dashboard presenting statistics in an intuitive way. The technology stack uses Laravel 10 for the backend and HTML, CSS, Bootstrap, and JavaScript for the frontend.",
     "portfolio_app_description": "A Nuxt.js-based website created to showcase Rizqya's portfolio. It includes personal information, competitive skills, modern and trend-aligned projects, certifications as proof of expertise, experience summaries, and more.",
+     "community_app_description": "A website specifically created for growing micro/small communities in Indonesia, where users can create communities, share experiences with fellow members, make posts, interact, and much more — all within a single platform.",
 
     "header_4": "SEND ME ANYTHING!",
     "textarea": "Write your thoughts about me here.",

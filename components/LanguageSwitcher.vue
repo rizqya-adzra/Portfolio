@@ -15,7 +15,7 @@ const changeLanguage = (code) => {
   <div class="relative inline-block text-left">
     <button
       @click="isOpen = !isOpen"
-      class="flex items-center gap-2 px-3 py-2 bg-secondary dark:bg-dark_secondary text-black dark:text-white rounded-full hover:opacity-90 focus:outline-none transition duration-500"
+      class="flex items-center gap-2 px-3 py-2 bg-secondary dark:bg-dark_secondary dark:hover:bg-dark_tertiary text-black dark:text-white rounded-full hover:opacity-90 focus:outline-none transition duration-500"
     >
       <Icon name="ph:globe-bold" class="text-3xl" />
       <Icon name="ph:caret-down-bold" class="text-xs" />
@@ -30,8 +30,8 @@ const changeLanguage = (code) => {
           v-for="l in locales"
           :key="l.code"
           @click="changeLanguage(l.code)"
-          class="px-2 py-2 mx-3 my-1 rounded cursor-pointer font-bold hover:bg-tertiary dark:hover:dark_tertiary"
-          :class="locale === l.code ? 'bg-tertiary dark:dark_tertiary' : ''"
+          class="px-2 py-2 mx-3 my-1 rounded cursor-pointer font-bold hover:bg-tertiary dark:hover:bg-dark_tertiary"
+          :class="locale === l.code ? 'bg-tertiary dark:bg-dark_tertiary' : ''"
         >
           {{ l.name }}
         </li>

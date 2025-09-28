@@ -26,13 +26,13 @@
     "card_works": "Pengerjaan",
     "card_other_links": "Link Lainnya",
 
-    "notes_app_description": "adalah aplikasi pencatat serbaguna yang dirancang untuk membantu Anda menangkap ide, mengatur daftar tugas, atau mencatat hal-hal penting dengan mudah dan cepat.",
+    "robaloxs_design_description": "Robaloxs - Aplikasi top up Robux dengan desain modern dan ramah pengguna. Dibuat untuk tampilan desktop maupun mobile dengan komponen yang reusable.",
+    "flight_design_description": "Desain aplikasi pemesanan tiket pesawat bergaya minimalis-modern yang tetap menjaga detail komponen dan menggunakan komponen reusable untuk tampilan desktop maupun mobile",
     "pengaduan_masyarakat_app_description": "Sebuah website untuk masyarakat Indonesia dalam menyampaikan keluhannya mengenai masalah daerah, baik dalam Kejahatan, Sosial maupun Pembangunan.",
     "books_app_description": "Bookhouse adalah platform daring yang menyediakan berbagai macam buku untuk memenuhi kebutuhan literasi Anda. Dengan antarmuka yang ramah pengguna, Bookhouse memudahkan Anda menemukan dan membeli buku favorit dari berbagai genre dan penulis ternama.",
     "keterlambatan_app_description": "Aplikasi ini memudahkan pengelolaan data keterlambatan siswa secara real-time bagi Administrator Sekolah dan Pembimbing Siswa. Dengan sistem otomatisasi pencatatan, aplikasi meningkatkan efisiensi administrasi dan menyediakan laporan yang bisa disesuaikan berdasarkan periode waktu tertentu. Tampilan antarmuka yang ramah dan responsif membuatnya mudah diakses melalui berbagai perangkat. Fitur utamanya meliputi pencatatan keterlambatan secara langsung, filter waktu untuk analisis data, serta dashboard interaktif yang menyajikan statistik dengan cara yang intuitif. Teknologi yang digunakan adalah Laravel 10 untuk backend dan HTML, CSS, Bootstrap, serta JavaScript untuk frontend.",
     "portfolio_app_description": "Website berbasis nuxt js yang dibuat untuk menampilkan Portofolio Rizqya. Berisikan Data diri, Kemampuan unggul yang bersaing, Projek yang modern dan sesuai dengan tren website, Sertifikasi sebagai bukti akan kemampuan yang dimiliki, Rekap Pengalaman, dan lain sebagainya.",
-    "community_app_description": "",
-    "ngetag_app_description": "",
+    "community_app_description": "Sebuah website yang dibuat khusus untuk komunitas micro/kecil yang sedang berkembang di Indonesia, pengguna dapat membuat komunitas, sharing pengalaman dengan sesama member, membuat postingan, berinteraksi, dan lain sebagainya hanya dalam satu platform.",
 
     "header_4": "KIRIMIN APA AJA!",
     "subheader_4": "jangan nulis yang aneh-aneh loh ya, makasih!",
